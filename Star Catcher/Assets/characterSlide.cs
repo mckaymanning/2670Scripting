@@ -6,6 +6,7 @@ public class characterSlide : MonoBehaviour {
     private CharacterController myCC;
     public int slideDuration = 20;
     public float slideTime = 0.01f;
+
     IEnumerator Slide()
     {
         int i = 0;
