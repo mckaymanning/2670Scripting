@@ -6,14 +6,19 @@ public class RecycleLevelModule : MonoBehaviour
     private Vector3 newLocation;
     void Start()
     {
-        staticVars.nextSectionPosition = 12;
+        staticVars.nextSectionPosition = 28;
     }
 
 
-    void OnTriggerEnter()
+	void OnTriggerEnter()
     {
-        newLocation.x = staticVars.nextSectionPosition;
-        transform.position = newLocation;
-        staticVars.nextSectionPosition += staticVars.distance;
-    }
+			newLocation.x = staticVars.nextSectionPosition;
+			transform.position = newLocation;
+			staticVars.nextSectionPosition += staticVars.distance;
+		 
+
+
+		
+		}
+
 }
