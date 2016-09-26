@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44257295, g: 0.49163246, b: 0.5714274, a: 1}
+  m_IndirectSpecularColor: {r: 0.44257322, g: 0.4916327, b: 0.5714282, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -181,7 +181,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1, z: 1}
+  m_Size: {x: 2, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &71511671
 MeshFilter:
@@ -275,7 +275,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1, z: 1}
+  m_Size: {x: 2, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &76515182
 MeshFilter:
@@ -563,7 +563,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1, z: 1}
+  m_Size: {x: 2, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &320220955
 MeshFilter:
@@ -723,7 +723,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1, z: 1}
+  m_Size: {x: 2, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &427247096
 MeshFilter:
@@ -753,98 +753,44 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4000013252905432, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
+    - target: {fileID: 4000012591621454, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
       propertyPath: m_LocalPosition.x
       value: 1.21
       objectReference: {fileID: 0}
-    - target: {fileID: 4000013252905432, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
+    - target: {fileID: 4000012591621454, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
       propertyPath: m_LocalPosition.y
       value: 6.92
       objectReference: {fileID: 0}
-    - target: {fileID: 4000013252905432, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
+    - target: {fileID: 4000012591621454, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
       propertyPath: m_LocalPosition.z
       value: -11.23
       objectReference: {fileID: 0}
-    - target: {fileID: 4000013252905432, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
+    - target: {fileID: 4000012591621454, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0.045196846
       objectReference: {fileID: 0}
-    - target: {fileID: 4000013252905432, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
+    - target: {fileID: 4000012591621454, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4000013252905432, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
+    - target: {fileID: 4000012591621454, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4000013252905432, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
+    - target: {fileID: 4000012591621454, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
       propertyPath: m_LocalRotation.w
       value: 0.9989781
       objectReference: {fileID: 0}
-    - target: {fileID: 4000013252905432, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
+    - target: {fileID: 4000012591621454, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4000012678393316, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012678393316, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 12.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012678393316, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013796288442, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013796288442, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013796288442, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 10.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012678393316, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000013796288442, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012631718906, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -6.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000012631718906, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 12.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000013566472174, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000013827304840, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 20000012473222706, guid: a310502d68b66aa42bcd430957bfe8d5,
-        type: 2}
-      propertyPath: field of view
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000011437393202, guid: a310502d68b66aa42bcd430957bfe8d5,
-        type: 2}
-      propertyPath: speed
-      value: 2
+    - target: {fileID: 1000012952350076, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
+      propertyPath: m_Name
+      value: Main Camera
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: a310502d68b66aa42bcd430957bfe8d5, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &487000206 stripped
 GameObject:
@@ -937,7 +883,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1, z: 1}
+  m_Size: {x: 2, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &546314662
 MeshFilter:
@@ -1031,7 +977,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1, z: 1}
+  m_Size: {x: 2, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &579257159
 MeshFilter:
@@ -1343,7 +1289,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1, z: 1}
+  m_Size: {x: 2, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &757078540
 MeshFilter:
@@ -1477,7 +1423,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1, z: 1}
+  m_Size: {x: 2, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &967862025
 MeshFilter:
@@ -1664,7 +1610,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1, z: 1}
+  m_Size: {x: 2, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1106514868
 MeshFilter:
@@ -1853,7 +1799,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1, z: 1}
+  m_Size: {x: 2, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1389154526
 MeshFilter:
@@ -2013,7 +1959,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1, z: 1}
+  m_Size: {x: 2, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1428498922
 MeshFilter:
@@ -2299,7 +2245,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1, z: 1}
+  m_Size: {x: 2, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1680203993
 MeshFilter:
@@ -2677,7 +2623,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1, z: 1}
+  m_Size: {x: 2, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1914229884
 MeshFilter:
@@ -2771,7 +2717,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 1, z: 1}
+  m_Size: {x: 2, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &2077757332
 MeshFilter:
