@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class moveCharacter : MonoBehaviour {
-
+    
     //This is the character controller component
     public CharacterController myCC;
     //Temp var of datatype vector3 to move the character
