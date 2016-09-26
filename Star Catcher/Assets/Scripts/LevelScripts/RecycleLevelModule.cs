@@ -11,6 +11,9 @@ public class RecycleLevelModule : MonoBehaviour
     private int i = 0;
 
 
+    System.Random Rnd = new System.Random();
+    private float nextTerrain;
+
     void Start()
     {
         RecyclableList = new List<Recycler>();
@@ -23,19 +26,17 @@ public class RecycleLevelModule : MonoBehaviour
     }
 
 
-    // void Start()
-    //{
-    //     staticVars.nextSectionPosition = 32;
-    // }
-
 
     void OnTriggerEnter()
     {
-			newLocation.x = staticVars.nextSectionPosition;
+        i = UnityEngine.Random.Range(0, RecyclableList.Count - 1);
+            newLocation.x = staticVars.nextSectionPosition;
 			RecyclableList[i].cube.position = newLocation;
-			staticVars.nextSectionPosition += staticVars.distance;
-            if (i < RecyclableList.Count-1)
-                i++;
+			    staticVars.nextSectionPosition += staticVars.distance;
+        if (RecyclableList.Count > 0)
+        {
+            RecyclableList.RemoveAt(i);
+        }
     }
 
 }

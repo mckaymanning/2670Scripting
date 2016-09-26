@@ -15,7 +15,6 @@ public class characterSlide : MonoBehaviour {
         {
             i++;
             yield return new WaitForSeconds(slideTime);
-            print("SLIDING!");
 
         }
         

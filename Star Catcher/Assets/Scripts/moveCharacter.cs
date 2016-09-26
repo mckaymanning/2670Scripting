@@ -9,6 +9,7 @@ public class moveCharacter : MonoBehaviour {
     private Vector3 tempPos;
     //Speed of the temp var in x
     public float speed = 1;
+    public float depthSpeed = 1;
     public float gravity = 1;
     public float jumpSpeed = 1;
     public int jumpCount = 0;
@@ -86,6 +87,7 @@ public class moveCharacter : MonoBehaviour {
         //Adding the speed var to the tempPos var x value with Horizontal input.
         tempPos.x = speed * Input.GetAxis("Horizontal");
         //Moves the character controller at an even pace
+        tempPos.z = depthSpeed * Input.GetAxis("Vertical");
         myCC.Move(tempPos * Time.deltaTime);
       
         }

@@ -13,7 +13,9 @@ public class Recycler : MonoBehaviour
     {
         cube = this.GetComponent<Transform>();
         if (RecycleAction != null && canBeRecycled)
+        {
             RecycleAction(this);
+        }
     }
 
     void OnTriggerEnter()
