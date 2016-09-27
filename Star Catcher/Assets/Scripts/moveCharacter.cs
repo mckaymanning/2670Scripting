@@ -7,11 +7,13 @@ public class moveCharacter : MonoBehaviour {
     public CharacterController myCC;
     //Temp var of datatype vector3 to move the character
     private Vector3 tempPos;
+  
     //Speed of the temp var in x
     public float speed = 1;
     public float depthSpeed = 1;
     public float gravity = 1;
     public float jumpSpeed = 1;
+    public float depthPos = 0;
     public int jumpCount = 0;
     public int jumpCountMax = 2;
     //Sliding vars
@@ -21,6 +23,7 @@ public class moveCharacter : MonoBehaviour {
     //Coroutine for sliding character.
     IEnumerator Slide()
     {
+        
         //Set a temp var to the value of slideDuration
         int durationTemp = slideDuration;
         //
@@ -69,12 +72,14 @@ public class moveCharacter : MonoBehaviour {
         }
 
         if (Input.GetKey(KeyCode.LeftArrow) && Input.GetKeyDown(KeyCode.S))
-        {
+        { 
             //StartCoroutine is a function that calls a coroutine. Use the coroutine in the argument
             StartCoroutine(Slide());
 
         }
 
+
+    
 
         //Test if character controller is grounded
         if (myCC.isGrounded)
@@ -89,7 +94,6 @@ public class moveCharacter : MonoBehaviour {
         //Moves the character controller at an even pace
         tempPos.z = depthSpeed * Input.GetAxis("Vertical");
         myCC.Move(tempPos * Time.deltaTime);
-      
         }
  }
 
