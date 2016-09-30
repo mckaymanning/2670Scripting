@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Trigger Review.unity
+- path: Assets/DepthPrototype.unity
   isLoaded: 1
   isActive: 1
