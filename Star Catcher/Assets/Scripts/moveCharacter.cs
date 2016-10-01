@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Audio;
 
 public class moveCharacter : MonoBehaviour {
     
@@ -19,6 +20,15 @@ public class moveCharacter : MonoBehaviour {
     //Sliding vars
     public int slideDuration = 100;
     public float slideTime = 0.01f;
+
+
+    //Audio 
+    //public AudioClip jumpSound;
+    //private AudioSource source;
+    //private float volLowRange = .5f;
+    //private float volHighRange = 1.0f;
+
+
 
     //Coroutine for sliding character.
     IEnumerator Slide()
@@ -53,6 +63,9 @@ public class moveCharacter : MonoBehaviour {
         //Waiting for input and comparing jumpcount
         if (Input.GetKeyDown(KeyCode.Space) && jumpCount < jumpCountMax-1)
         {
+            //float vol = Random.Range(volLowRange, volHighRange);
+            //source.PlayOneShot(jumpSound, vol);
+
             //incrementing the jumpcount by one
             jumpCount++;
             //adding the jumpSpeed var to the tempPos var
