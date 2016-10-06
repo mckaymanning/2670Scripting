@@ -1,34 +1,14 @@
 fileFormatVersion: 2
-guid: 8e5a0e78b214cff4fae973865c908acd
-timeCreated: 1475659073
+guid: 2ab1e2c4541434045aa2280c93beac3d
+timeCreated: 1475704836
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: group
-    100002: pasted__polySurface1
-    100004: polySurface1
-    100006: polySurface1 1
-    100008: polySurface2
-    100010: polySurface3
-    100012: //RootNode
-    100014: transform1
-    100016: transform2
-    100018: transform3
-    100020: transform4
-    400000: group
-    400002: pasted__polySurface1
-    400004: polySurface1
-    400006: polySurface1 1
-    400008: polySurface2
-    400010: polySurface3
-    400012: //RootNode
-    400014: transform1
-    400016: transform2
-    400018: transform3
-    400020: transform4
-    2300000: polySurface1
-    3300000: polySurface1
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: polySurface1
   materials:
     importMaterials: 1

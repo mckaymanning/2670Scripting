@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000010566508230}
+  m_IsPrefabParent: 1
+--- !u!1 &1000010566508230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000010233709474}
+  - 65: {fileID: 65000012623845044}
+  - 114: {fileID: 114000010019486748}
+  m_Layer: 13
+  m_Name: populatePoint01 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 484878306007051821, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000010233709474
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010566508230}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.376, y: 0.458, z: 0.65}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!65 &65000012623845044
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010566508230}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114000010019486748
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010566508230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 079c060a19f60814eabef1c4907553ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  populateLocations:
+  - {fileID: 4000010233709474}
+  Objects:
+  - {fileID: 1000013277227514, guid: 7564b31a825778b4d9b28fc1f0105cb7, type: 2}
+  - {fileID: 1000010970651524, guid: 2f6f47119f35af248b570c08fbc1409c, type: 2}
+  - {fileID: 1000011645193668, guid: f453f32fd6c249f449da94b17c2e7eb8, type: 2}
+  - {fileID: 1000013106664356, guid: cb3d1ccd2f3b95c499ec01e658636e3c, type: 2}
+  - {fileID: 1000013189287858, guid: 5beb2cb5c0c120f4b80a0032b4cf5591, type: 2}
+  - {fileID: 1000013435771436, guid: 9da95f12cbcd9884f8bf4587a4c2a360, type: 2}

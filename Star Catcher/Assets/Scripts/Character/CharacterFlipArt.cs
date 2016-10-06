@@ -36,6 +36,7 @@ public class CharacterFlipArt : MonoBehaviour
 
     void StopScript()
     {
+<<<<<<< Updated upstream
        // UserInputs.UserInput += 
     }
 
@@ -43,6 +44,16 @@ public class CharacterFlipArt : MonoBehaviour
     {
         UserInputs.UserInput += FlipCharacter;
         Endgame.GameOver += StopScript;
+=======
+        if (Input.GetKeyDown(KeyCode.LeftArrow) && forward)
+        {
+            FlipCharacter(false);
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow) && !forward)
+        {
+            FlipCharacter(true);
+        }
+>>>>>>> Stashed changes
     }
 
 }

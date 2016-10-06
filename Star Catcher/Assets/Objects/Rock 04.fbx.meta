@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: d0e6fbe573b4f7144a1f9e3c59a3b328
-timeCreated: 1475656758
+guid: 9384d2bf762fa0641b86ea75794edbcc
+timeCreated: 1475703341
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pCube1
+    4300000: polySurface3
   materials:
     importMaterials: 1
     materialName: 0
