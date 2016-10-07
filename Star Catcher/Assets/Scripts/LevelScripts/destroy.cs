@@ -7,7 +7,7 @@ public class destroy : MonoBehaviour
     void OnBecameInvisible()
     {
         Destroy (gameObject);
-        print("Destroyed");
+
     }
 
 }
