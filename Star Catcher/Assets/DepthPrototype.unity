@@ -292,7 +292,7 @@ Prefab:
       objectReference: {fileID: 8300000, guid: 566ba111cf274c744831999ea8eabcea, type: 3}
     - target: {fileID: 1000010685282242, guid: 1bc7cc7822e72a24fb133b17f695f7af, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000011714489868, guid: 1bc7cc7822e72a24fb133b17f695f7af,
         type: 2}
@@ -610,8 +610,13 @@ Prefab:
     - target: {fileID: 114000012023097880, guid: 6b15e7c7029a4476fac1a1927401ba53,
         type: 2}
       propertyPath: speed
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 45000010520758490, guid: 6b15e7c7029a4476fac1a1927401ba53,
+        type: 2}
+      propertyPath: m_CustomSkybox
+      value: 
+      objectReference: {fileID: 2100000, guid: 3930fc89a28b29746bde6a2389a513e0, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
   m_IsPrefabParent: 0
@@ -656,7 +661,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000013235072382, guid: 858f4522d7b9702409af325d6d4afd72, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000014268336906, guid: 858f4522d7b9702409af325d6d4afd72, type: 2}
       propertyPath: m_LocalScale.z
