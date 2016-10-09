@@ -21,6 +21,7 @@ GameObject:
   - 4: {fileID: 4000014108852686}
   - 114: {fileID: 114000011809679900}
   - 23: {fileID: 23000012192606328}
+  - 65: {fileID: 65000013076319436}
   m_Layer: 9
   m_Name: Rock 04
   m_TagString: Untagged
@@ -95,7 +96,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010031290720}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.73, y: -1.374, z: -1.126}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -179,6 +180,18 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: a770634e1c2036848898d13bae3dbffb, type: 3}
+--- !u!65 &65000013076319436
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010031290720}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.45, z: 0.4}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114000011809679900
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -22,11 +22,11 @@ public class newUserInput : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.UpArrow) && UserInput != null)
         {
-            UserInput(KeyCode.LeftArrow);
+            UserInput(KeyCode.UpArrow);
         }
         if (Input.GetKeyDown(KeyCode.DownArrow) && UserInput != null)
         {
-            UserInput(KeyCode.LeftArrow);
+            UserInput(KeyCode.DownArrow);
         }
     }
 }

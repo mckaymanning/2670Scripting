@@ -33,7 +33,7 @@ public class ArtFlip : MonoBehaviour
     {
         newUserInput.UserInput -= FlipCharacter;
     }
-
+    
     void Start()
     {
         //EndGame.GameOver += StopScript;

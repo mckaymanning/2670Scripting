@@ -39,6 +39,7 @@ GameObject:
   - 4: {fileID: 4000013652780208}
   - 114: {fileID: 114000010751398430}
   - 23: {fileID: 23000012997582684}
+  - 65: {fileID: 65000012911116042}
   m_Layer: 9
   m_Name: Cactus 08
   m_TagString: Untagged
@@ -52,10 +53,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011421061526}
-  m_LocalRotation: {x: 0, y: 0.1736482, z: -0, w: 0.9848078}
+  m_LocalRotation: {x: -0.24184474, y: 0.66446304, z: -0.06162832, w: 0.70441604}
   m_LocalPosition: {x: 0.13412888, y: 0.013271758, z: 0}
   m_LocalScale: {x: 20, y: 20, z: 20}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -15, y: 90, z: -25}
   m_Children: []
   m_Father: {fileID: 4000013652780208}
   m_RootOrder: 0
@@ -65,10 +66,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013484801460}
-  m_LocalRotation: {x: -0.24184474, y: 0.66446304, z: -0.06162832, w: 0.70441604}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: -15, y: 90, z: -25}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000012379833964}
   m_Father: {fileID: 0}
@@ -150,6 +151,18 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: c1746ddd7e080d3409612819bf9d356f, type: 3}
+--- !u!65 &65000012911116042
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013484801460}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 0.8, z: 0.75}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114000010751398430
 MonoBehaviour:
   m_ObjectHideFlags: 1

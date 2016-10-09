@@ -39,6 +39,7 @@ GameObject:
   - 4: {fileID: 4000012877481898}
   - 114: {fileID: 114000012589878154}
   - 23: {fileID: 23000010017887108}
+  - 65: {fileID: 65000012635131104}
   m_Layer: 9
   m_Name: Cactus 04
   m_TagString: Untagged
@@ -53,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011595498416}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: -0.391, z: -1.536}
+  m_LocalPosition: {x: 0, y: -0.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_Children:
@@ -150,6 +151,18 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: c1746ddd7e080d3409612819bf9d356f, type: 3}
+--- !u!65 &65000012635131104
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011595498416}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 0.9, z: 0.75}
+  m_Center: {x: 0.12, y: 0, z: 0}
 --- !u!114 &114000012589878154
 MonoBehaviour:
   m_ObjectHideFlags: 1
