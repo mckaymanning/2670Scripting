@@ -3,12 +3,12 @@ using System.Collections;
 using UnityEngine.Audio;
 
 public class moveCharacter : MonoBehaviour {
-    
+
     //This is the character controller component
     public CharacterController myCC;
     //Temp var of datatype vector3 to move the character
     private Vector3 tempPos;
-  
+
     //Speed of the temp var in x
     public float speed = 1;
     public float depthSpeed = 1;
@@ -22,6 +22,7 @@ public class moveCharacter : MonoBehaviour {
     public float slideTime = 0.01f;
 
 
+
     //Audio 
     //public AudioClip jumpSound;
     //private AudioSource source;
@@ -33,7 +34,7 @@ public class moveCharacter : MonoBehaviour {
     //Coroutine for sliding character.
     IEnumerator Slide()
     {
-        
+
         //Set a temp var to the value of slideDuration
         int durationTemp = slideDuration;
         //
@@ -49,13 +50,18 @@ public class moveCharacter : MonoBehaviour {
             //new creates an instance of an object
             //WaitForSeconds is an object that waits for a duration of time
             yield return new WaitForSeconds(slideTime);
-            
+
         }
         speed = speedTemp;
 
         slideDuration = durationTemp;
 
     }
+
+    //void StartGAmeHandler()
+    //{
+    //
+    //}
 
 
     // Update is called once per frame
@@ -104,6 +110,7 @@ public class moveCharacter : MonoBehaviour {
         tempPos.y -= gravity;
         //Adding the speed var to the tempPos var x value with Horizontal input.
         tempPos.x = speed * Input.GetAxis("Horizontal");
+        
         //Moves the character controller at an even pace
         tempPos.z = depthSpeed * Input.GetAxis("Vertical");
         myCC.Move(tempPos * Time.deltaTime);

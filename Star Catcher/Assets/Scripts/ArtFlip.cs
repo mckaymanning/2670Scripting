@@ -29,10 +29,10 @@ public class ArtFlip : MonoBehaviour
         }
     }
 
-    void StopScript()
-    {
-        newUserInput.UserInput -= FlipCharacter;
-    }
+    //void StopScript()
+    //{
+    //    newUserInput.UserInput -= FlipCharacter;
+    //}
     
     void Start()
     {
