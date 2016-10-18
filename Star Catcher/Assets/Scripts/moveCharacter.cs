@@ -76,6 +76,10 @@ public class moveCharacter : MonoBehaviour {
             jumpCount++;
             //adding the jumpSpeed var to the tempPos var
             tempPos.y = jumpSpeed;
+            //if (myCC.isGrounded)
+            //{
+            //    tempPos.y = 0;
+            //}
 
            
 
