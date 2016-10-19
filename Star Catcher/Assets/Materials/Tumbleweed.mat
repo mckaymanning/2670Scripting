@@ -6,21 +6,15 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: CloudyCrown_Midnight
-  m_Shader: {fileID: 104, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _SUNDISK_HIGH_QUALITY
-  m_LightmapFlags: 5
-  m_CustomRenderQueue: 1000
+  m_Name: Tumbleweed
+  m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _EMISSION
+  m_LightmapFlags: 1
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
-    - first:
-        name: _BackTex
-      second:
-        m_Texture: {fileID: 2800000, guid: f80a52923c75cf5479ae52d1bb441568, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - first:
         name: _BumpMap
       second:
@@ -46,27 +40,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
-        name: _DownTex
-      second:
-        m_Texture: {fileID: 2800000, guid: f80a52923c75cf5479ae52d1bb441568, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - first:
         name: _EmissionMap
       second:
         m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - first:
-        name: _FrontTex
-      second:
-        m_Texture: {fileID: 2800000, guid: f80a52923c75cf5479ae52d1bb441568, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - first:
-        name: _LeftTex
-      second:
-        m_Texture: {fileID: 2800000, guid: f80a52923c75cf5479ae52d1bb441568, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -94,27 +70,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
-        name: _RightTex
-      second:
-        m_Texture: {fileID: 2800000, guid: f80a52923c75cf5479ae52d1bb441568, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - first:
-        name: _Tex
+        name: _SpecGlossMap
       second:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - first:
-        name: _UpTex
-      second:
-        m_Texture: {fileID: 2800000, guid: f80a52923c75cf5479ae52d1bb441568, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     m_Floats:
-    - first:
-        name: _AtmosphereThickness
-      second: 0.79
     - first:
         name: _BumpScale
       second: 1
@@ -128,11 +89,14 @@ Material:
         name: _DstBlend
       second: 0
     - first:
-        name: _Exposure
-      second: 1.18
+        name: _GlossMapScale
+      second: 1
     - first:
         name: _Glossiness
-      second: 0.5
+      second: 0.34
+    - first:
+        name: _GlossyReflections
+      second: 1
     - first:
         name: _Metallic
       second: 0
@@ -146,17 +110,14 @@ Material:
         name: _Parallax
       second: 0.02
     - first:
-        name: _Rotation
-      second: 179
+        name: _SmoothnessTextureChannel
+      second: 0
+    - first:
+        name: _SpecularHighlights
+      second: 1
     - first:
         name: _SrcBlend
       second: 1
-    - first:
-        name: _SunDisk
-      second: 2
-    - first:
-        name: _SunSize
-      second: 0.732
     - first:
         name: _UVSec
       second: 0
@@ -166,16 +127,10 @@ Material:
     m_Colors:
     - first:
         name: _Color
-      second: {r: 1, g: 1, b: 1, a: 1}
+      second: {r: 0.9632353, g: 0.7097972, b: 0.24789146, a: 1}
     - first:
         name: _EmissionColor
-      second: {r: 0, g: 0, b: 0, a: 1}
+      second: {r: 0.14705884, g: 0.063872166, b: 0.02270762, a: 1}
     - first:
-        name: _GroundColor
-      second: {r: 0.369, g: 0.349, b: 0.341, a: 1}
-    - first:
-        name: _SkyTint
-      second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    - first:
-        name: _Tint
-      second: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+        name: _SpecColor
+      second: {r: 0.16911763, g: 0.10072447, b: 0.114874795, a: 1}
