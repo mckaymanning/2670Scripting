@@ -21,6 +21,14 @@ public class moveCharacter : MonoBehaviour {
     public int slideDuration = 100;
     public float slideTime = 0.01f;
 
+    public Animator myAnimator;
+    float _h;
+
+    void Start()
+    {
+        myAnimator = GetComponent<Animator>();
+        _h = Input.GetAxis("Horizontal");
+    }
 
 
     //Audio 
@@ -66,6 +74,9 @@ public class moveCharacter : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+
+        myAnimator.SetFloat("speed", _h);
+
         //Waiting for input and comparing jumpcount
         if (Input.GetKeyDown(KeyCode.Space) && jumpCount < jumpCountMax-1)
         {
