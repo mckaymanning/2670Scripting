@@ -20,23 +20,15 @@ public class moveCharacter : MonoBehaviour {
     //Sliding vars
     public int slideDuration = 100;
     public float slideTime = 0.01f;
-
+    
     public Animator myAnimator;
-    float _h;
+
+
 
     void Start()
     {
         myAnimator = GetComponent<Animator>();
-        _h = Input.GetAxis("Horizontal");
     }
-
-
-    //Audio 
-    //public AudioClip jumpSound;
-    //private AudioSource source;
-    //private float volLowRange = .5f;
-    //private float volHighRange = 1.0f;
-
 
 
     //Coroutine for sliding character.
@@ -73,9 +65,19 @@ public class moveCharacter : MonoBehaviour {
 
 
     // Update is called once per frame
-    void Update () {
 
-        myAnimator.SetFloat("speed", _h);
+    
+
+    void Update ()
+    { 
+        //if (Input.GetKeyDown(KeyCode.RightArrow))
+        
+        //  myAnimator.SetBool("IsRunning", true);
+        //  print("true");
+           
+        
+
+        //myAnimator.SetFloat("speed", _h);
 
         //Waiting for input and comparing jumpcount
         if (Input.GetKeyDown(KeyCode.Space) && jumpCount < jumpCountMax-1)
@@ -119,13 +121,14 @@ public class moveCharacter : MonoBehaviour {
         if (myCC.isGrounded)
         {
             //Reset the jumpcount if grounded
-            jumpCount = 0;
+            jumpCount = 0;         
         }
         //Adding the gravity var to the y position of the tempPos var
         tempPos.y -= gravity;
         //Adding the speed var to the tempPos var x value with Horizontal input.
         tempPos.x = speed * Input.GetAxis("Horizontal");
         
+
         //Moves the character controller at an even pace
         tempPos.z = depthSpeed * Input.GetAxis("Vertical");
         myCC.Move(tempPos * Time.deltaTime);

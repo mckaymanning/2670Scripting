@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 87ed37beea18e69409fac9c38079182a
-timeCreated: 1476783080
+timeCreated: 1476988925
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -50,7 +50,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 600
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
@@ -62,10 +62,10 @@ TextureImporter:
       name: Rabbit_Idle_Sprite_Sheet_0
       rect:
         serializedVersion: 2
-        x: 162
-        y: 97
-        width: 1032
-        height: 870
+        x: 113
+        y: 68
+        width: 726
+        height: 612
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -75,10 +75,10 @@ TextureImporter:
       name: Rabbit_Idle_Sprite_Sheet_1
       rect:
         serializedVersion: 2
-        x: 1429
-        y: 97
-        width: 1034
-        height: 866
+        x: 1004
+        y: 68
+        width: 727
+        height: 609
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -88,10 +88,10 @@ TextureImporter:
       name: Rabbit_Idle_Sprite_Sheet_2
       rect:
         serializedVersion: 2
-        x: 2697
-        y: 97
-        width: 1031
-        height: 859
+        x: 1897
+        y: 68
+        width: 724
+        height: 604
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -101,10 +101,10 @@ TextureImporter:
       name: Rabbit_Idle_Sprite_Sheet_3
       rect:
         serializedVersion: 2
-        x: 3963
-        y: 97
-        width: 1034
-        height: 866
+        x: 2786
+        y: 68
+        width: 727
+        height: 609
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,10 +114,10 @@ TextureImporter:
       name: Rabbit_Idle_Sprite_Sheet_4
       rect:
         serializedVersion: 2
-        x: 5232
-        y: 97
-        width: 1030
-        height: 870
+        x: 3678
+        y: 68
+        width: 725
+        height: 612
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,10 +127,10 @@ TextureImporter:
       name: Rabbit_Idle_Sprite_Sheet_5
       rect:
         serializedVersion: 2
-        x: 6405
-        y: 97
-        width: 1031
-        height: 874
+        x: 4504
+        y: 68
+        width: 724
+        height: 615
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
