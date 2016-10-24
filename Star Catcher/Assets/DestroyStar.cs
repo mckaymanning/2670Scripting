@@ -4,11 +4,20 @@ using System.Collections;
 public class DestroyStar : MonoBehaviour
 {
 
+    public float endTime = 3;
 
-    void Update()
+    
+    
+    void OnCollisionEnter()
     {
-        Destroy(gameObject, 4);
-
+        Destroy(gameObject, endTime);
     }
+
+
+    //IEnumerator EndStar()
+    //{
+    //    yield return new WaitForSeconds(endTime);
+    //    
+    //}
 
 }

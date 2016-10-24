@@ -14,6 +14,6 @@ public class LevelReset : MonoBehaviour
 
     void OnTriggerEnter()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("DepthPrototype");
     }
 }
