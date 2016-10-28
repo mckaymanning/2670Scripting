@@ -4,38 +4,19 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
 
+    public Text scoreText;
+    public int score;
 
-    public static int score;
-
-    Text text;
-
-    void Start()
+    public void AddScore(int newScoreValue)
     {
-        text = GetComponent<Text>();
 
-        score = 0;
+        score += newScoreValue;
+        UpdateScore();
     }
 
-    void Update()
+    void UpdateScore()
     {
-        if (score < 0)
-            score = 0;
+        scoreText.text = "Score: " + score;
 
-        text.text = "" + score;
     }
-
-
-    public static void AddPoints(int pointsToAdd)
-    {
-        score += pointsToAdd;
-    }
-
-    public static void Reset()
-    {
-        score = 0;
-    }
-
-
-
-
 }
