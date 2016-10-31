@@ -6,7 +6,7 @@ public class CloneStar : MonoBehaviour
 
     public Transform[] spawnPoints;
     //Changed the next line from a transform to a gameobject added the brackets in and pluralized star to stars
-    //public Transform star;
+    public Transform star;
     public GameObject[] stars;
     public float spawnFrequency = 1;
     public bool canSpawnStars = true;
@@ -31,7 +31,7 @@ public class CloneStar : MonoBehaviour
                 j = 0;
             }
 
-            //Instantiate(stars, spawnPoints[i].position, Quaternion.identity);
+            Instantiate(star, spawnPoints[i].position, Quaternion.identity);
             yield return new WaitForSeconds(spawnFrequency);
         }
 

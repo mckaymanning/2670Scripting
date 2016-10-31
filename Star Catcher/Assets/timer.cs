@@ -21,8 +21,5 @@ void Start()
        
     }
 
-    void gameOver()
-    {
-        SceneManager.LoadScene("SplashPrototype");
-    }
+
 }

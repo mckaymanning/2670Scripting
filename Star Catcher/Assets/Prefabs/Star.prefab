@@ -41,6 +41,7 @@ GameObject:
   - 114: {fileID: 114000014279025602}
   - 114: {fileID: 114000011224755358}
   - 114: {fileID: 114000010475783162}
+  - 114: {fileID: 114000012868435298}
   m_Layer: 18
   m_Name: Star
   m_TagString: Untagged
@@ -152,7 +153,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012308700640}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 4.25, y: 15.130483, z: 1.3558435}
+  m_LocalPosition: {x: 6.707576, y: 11.39, z: -0.06}
   m_LocalScale: {x: 8, y: 8, z: 8}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_Children:
@@ -261,8 +262,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.1, y: 0.1, z: 0.1}
-  m_Center: {x: 0, y: 0, z: -0.12}
+  m_Size: {x: 0.1, y: 0.1, z: -0.12}
+  m_Center: {x: 0, y: 0, z: -0.4}
 --- !u!65 &65000011004621894
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -332,7 +333,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012308700640}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41459fe542dbc4f469394d13e1ca6e15, type: 3}
   m_Name: 
@@ -373,6 +374,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 191c47a9ebace0a41a4203e6d30f16d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endTime: 3
+--- !u!114 &114000012868435298
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012308700640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4507d39235b470a4ba68f6c0dfb8d8a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceTime: 10
+  forceDuration: 0.1
+  forceRange: 10
+  torqueRange: 2
   endTime: 3
 --- !u!114 &114000014165760512
 MonoBehaviour:
@@ -416,7 +433,7 @@ ParticleSystem:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013749567000}
-  serializedVersion: 4
+  serializedVersion: 2
   lengthInSec: 5
   startDelay:
     scalar: 0
@@ -454,13 +471,12 @@ ParticleSystem:
       m_RotationOrder: 4
     minMaxState: 0
   speed: 1
+  randomSeed: 3856409218
   looping: 1
   prewarm: 1
   playOnAwake: 1
   moveWithTransform: 1
-  autoRandomSeed: 1
   scalingMode: 1
-  randomSeed: -438558078
   InitialModule:
     serializedVersion: 2
     enabled: 1
