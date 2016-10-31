@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class StarTrailDestroy : MonoBehaviour {
+public class StarTrailDestroy : MonoBehaviour
+{
+    public ParticleSystem trailSystem;
+    
 
-    public GameObject Trail;
-
-    void OnTriggerDestroy()
+    void OnTriggerEnter()
     {
-        Destroy(Trail);
+        trailSystem.Stop();
     }
 }
