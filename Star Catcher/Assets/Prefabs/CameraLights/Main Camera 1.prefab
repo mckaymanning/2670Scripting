@@ -51,7 +51,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000011535029600}
   m_Layer: 0
-  m_Name: SpawnPoint 01 (6)
+  m_Name: SpawnPoint 07
   m_TagString: Untagged
   m_Icon: {fileID: -6042967201622091453, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -66,7 +66,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012485179170}
   m_Layer: 0
-  m_Name: SpawnPoint 01 (1)
+  m_Name: SpawnPoint 02
   m_TagString: Untagged
   m_Icon: {fileID: -6042967201622091453, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -137,7 +137,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010552428120}
   m_Layer: 0
-  m_Name: SpawnPoint 01 (7)
+  m_Name: SpawnPoint 08
   m_TagString: Untagged
   m_Icon: {fileID: -6042967201622091453, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -170,7 +170,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013265949212}
   m_Layer: 0
-  m_Name: SpawnPoint 01 (5)
+  m_Name: SpawnPoint 06
   m_TagString: Untagged
   m_Icon: {fileID: -6042967201622091453, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -185,7 +185,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013594140350}
   m_Layer: 0
-  m_Name: SpawnPoint 01 (3)
+  m_Name: SpawnPoint 04
   m_TagString: Untagged
   m_Icon: {fileID: -6042967201622091453, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -200,7 +200,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000010071994236}
   m_Layer: 0
-  m_Name: SpawnPoint 01 (4)
+  m_Name: SpawnPoint 05
   m_TagString: Untagged
   m_Icon: {fileID: -6042967201622091453, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -237,7 +237,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013450700152}
   m_Layer: 0
-  m_Name: SpawnPoint 01 (2)
+  m_Name: SpawnPoint 03
   m_TagString: Untagged
   m_Icon: {fileID: -6042967201622091453, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -323,7 +323,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012909876196}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.99, y: 0, z: 0.8}
+  m_LocalPosition: {x: -8.99, y: -0, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -336,7 +336,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010908714768}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.48, y: 0, z: 0}
+  m_LocalPosition: {x: -11.48, y: -0, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -362,7 +362,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012063599964}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.29, y: 0, z: 0.8}
+  m_LocalPosition: {x: 9.29, y: -0, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -401,7 +401,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011023049024}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.04, y: 0, z: 0.8}
+  m_LocalPosition: {x: 3.04, y: -0, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -414,7 +414,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010493394374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 9.53, z: 11.05}
+  m_LocalPosition: {x: 1.07, y: 9.53, z: 11.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -474,7 +474,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011043120800}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.66, y: 0, z: 0}
+  m_LocalPosition: {x: -5, y: 0, z: -0.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -509,7 +509,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012672228908}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.11, y: 0, z: 0.8}
+  m_LocalPosition: {x: -3.11, y: -0, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -522,7 +522,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013144980246}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.04, y: 0, z: 0}
+  m_LocalPosition: {x: -0.04, y: -0, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -535,7 +535,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012907644880}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.54, y: 0, z: 0}
+  m_LocalPosition: {x: 6.54, y: -0, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1065,7 +1065,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8df2103de0ced704bb8d80baae5d3d88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RecyclableList: []
+  RecyclableList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &114000011818602102
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1094,7 +1104,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012952350076}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c9408b8c06d5f94482e00013bab0a64, type: 3}
   m_Name: 
@@ -1117,6 +1127,10 @@ MonoBehaviour:
   - {fileID: 4000013450700152}
   - {fileID: 4000013594140350}
   - {fileID: 4000010071994236}
+  - {fileID: 4000013265949212}
+  - {fileID: 4000011535029600}
+  - {fileID: 4000010552428120}
+  star: {fileID: 4000013290936758, guid: e131a750f118940fdb5e15ecd8118e0e, type: 2}
   stars:
   - {fileID: 1000012308700640, guid: e131a750f118940fdb5e15ecd8118e0e, type: 2}
   spawnFrequency: 5
@@ -1132,7 +1146,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8df2103de0ced704bb8d80baae5d3d88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RecyclableList: []
+  RecyclableList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!124 &124000013934754848
 Behaviour:
   m_ObjectHideFlags: 1

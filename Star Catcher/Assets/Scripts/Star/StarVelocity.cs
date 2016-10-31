@@ -3,20 +3,32 @@ using System.Collections;
 
 public class StarVelocity : MonoBehaviour {
 
-    public float speed = 1;
-    private Vector3 tempPos;
+    public int forceTime = 10;
+    public float forceDuration = 0.1f;
+    private Rigidbody rigid;
+    public float forceRange = 10;
+    private Vector3 forceVector;
 
-    // Use this for initialization
-    void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
 
+    void Start()
+    {
         
-        tempPos.x = speed * Time.deltaTime;
-        transform.Translate(tempPos);
-  
+        rigid = GetComponent<Rigidbody>();
+        StartCoroutine(RunRandomForce());
     }
+
+    IEnumerator RunRandomForce()
+    {
+
+        while (forceTime > 0)
+        {
+            yield return new WaitForSeconds(forceDuration);
+            forceVector.x = Random.Range(-forceRange, forceRange);     
+            rigid.AddForce(forceVector);
+            forceTime--;
+        }
+    }
+
+    public float endTime = 3;
 }
+

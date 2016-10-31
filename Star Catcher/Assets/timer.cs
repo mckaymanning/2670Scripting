@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 public class timer : MonoBehaviour {
 
     private Text timerText;
-    public float myCoolTimer = 221;
+    public float myCoolTimer = 161;
     private int minutes;
     private int seconds;
-    private float secToMins;
-    int = doubleDigits = 10;
+    private float secToMins = 60;
+    int doubleDigits = 10;
 
 void Start()
     {
@@ -28,7 +28,7 @@ void Start()
         seconds = (int) (myCoolTimer % secToMins);
         minutes = (int)(myCoolTimer / secToMins);
        checkTime();
-       
+        EndGame();
     }
     
     void checkTime()
@@ -39,6 +39,12 @@ void Start()
           {
              timerText.text = minutes + ":0" + seconds;
           }
+    }
+
+    void EndGame()
+    {
+        if (myCoolTimer <= 0)
+            SceneManager.LoadScene("EndGameScene");
     }
 
 

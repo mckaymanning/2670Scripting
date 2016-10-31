@@ -7,6 +7,9 @@ public class MenuScript : MonoBehaviour {
     { 
     SceneManager.LoadScene("DepthPrototype");
     }
-	
 
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("SplashPrototype");
+    }
 }

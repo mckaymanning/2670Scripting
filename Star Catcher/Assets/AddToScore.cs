@@ -9,6 +9,7 @@ public class AddToScore : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        staticVars.yourScore = 0;
         count = 0;
         SetCountText();
     }
@@ -22,5 +23,10 @@ public class AddToScore : MonoBehaviour {
     void SetCountText()
     {
         countText.text = "Stars: " + count.ToString();
+    }
+
+    void Update()
+    {
+        staticVars.yourScore = count;
     }
 }

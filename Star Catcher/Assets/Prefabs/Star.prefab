@@ -153,7 +153,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012308700640}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 6.707576, y: 11.39, z: -0.06}
+  m_LocalPosition: {x: 31.383646, y: 12.132032, z: 0.5340147}
   m_LocalScale: {x: 8, y: 8, z: 8}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_Children:
@@ -262,7 +262,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.1, y: 0.1, z: -0.12}
+  m_Size: {x: 0.1, y: -0.01, z: -0.12}
   m_Center: {x: 0, y: 0, z: -0.4}
 --- !u!65 &65000011004621894
 BoxCollider:
@@ -333,12 +333,15 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012308700640}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41459fe542dbc4f469394d13e1ca6e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  forceTime: 1
+  forceDuration: 0.1
+  forceRange: 200
+  endTime: 10
 --- !u!114 &114000011037270786
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -381,16 +384,16 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012308700640}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4507d39235b470a4ba68f6c0dfb8d8a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   forceTime: 10
-  forceDuration: 0.1
-  forceRange: 10
-  torqueRange: 2
-  endTime: 3
+  forceDuration: 1
+  forceRange: 3000
+  torqueRange: 30
+  endTime: 10
 --- !u!114 &114000014165760512
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -433,7 +436,7 @@ ParticleSystem:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013749567000}
-  serializedVersion: 2
+  serializedVersion: 4
   lengthInSec: 5
   startDelay:
     scalar: 0
@@ -471,12 +474,13 @@ ParticleSystem:
       m_RotationOrder: 4
     minMaxState: 0
   speed: 1
-  randomSeed: 3856409218
   looping: 1
   prewarm: 1
   playOnAwake: 1
-  moveWithTransform: 1
-  scalingMode: 1
+  moveWithTransform: 0
+  autoRandomSeed: 0
+  scalingMode: 2
+  randomSeed: -438558080
   InitialModule:
     serializedVersion: 2
     enabled: 1
@@ -852,7 +856,7 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 0
     randomizeRotationDirection: 1
-    gravityModifier: -0.5
+    gravityModifier: 0
     maxNumParticles: 20
     size3D: 0
     rotation3D: 0
