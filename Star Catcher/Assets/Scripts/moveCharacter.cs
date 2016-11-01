@@ -116,15 +116,22 @@ public class moveCharacter : MonoBehaviour {
 
 
     
+		//Adding the gravity var to the y position of the tempPos var
+		tempPos.y -= gravity;
 
         //Test if character controller is grounded
         if (myCC.isGrounded)
         {
             //Reset the jumpcount if grounded
-            jumpCount = 0;         
+            jumpCount = 0;
+
         }
-        //Adding the gravity var to the y position of the tempPos var
-        tempPos.y -= gravity;
+
+		if (myCC.isGrounded && tempPos.y < 0) 
+		{
+			tempPos.y = 0;
+		}
+        
         //Adding the speed var to the tempPos var x value with Horizontal input.
         tempPos.x = speed * Input.GetAxis("Horizontal");
         
