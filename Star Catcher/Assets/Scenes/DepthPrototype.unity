@@ -90,7 +90,7 @@ NavMeshSettings:
     minRegionArea: 2
     cellSize: 0.16666667
     manualCellSize: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: ad6cd4fe79b45d241ab2b28ae67cae63, type: 2}
 --- !u!1001 &3626167
 Prefab:
   m_ObjectHideFlags: 0
@@ -2531,6 +2531,10 @@ Prefab:
     - target: {fileID: 114000011747416426, guid: 755fe1f99cd01ae479cacb180cfdd100,
         type: 2}
       propertyPath: canBeRecycled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013181146770, guid: 755fe1f99cd01ae479cacb180cfdd100, type: 2}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
