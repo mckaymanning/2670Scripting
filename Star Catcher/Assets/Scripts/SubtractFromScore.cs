@@ -4,31 +4,32 @@ using UnityEngine.UI;
 public class SubtractFromScore : MonoBehaviour
 {
 
-    public int count;
+    //public int count;
     public Text countText;
     public int lossOfPoints;
 
     // Use this for initialization
     void Start()
     {
+		
         staticVars.yourScore = 0;
-        count = 0;
+        //count = 0;
         SetCountText();
     }
 
     void OnTriggerEnter()
     {
-        count = count - lossOfPoints;
+		staticVars.count = staticVars.count - lossOfPoints;
         SetCountText();
     }
 
     void SetCountText()
     {
-        countText.text = "Stars: " + count.ToString();
+        countText.text = "Stars: " + staticVars.count.ToString();
     }
 
     void Update()
     {
-        staticVars.yourScore = count;
+        staticVars.yourScore = staticVars.count;
     }
 }

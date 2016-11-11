@@ -3,30 +3,31 @@ using System.Collections;
 using UnityEngine.UI;
 public class AddToScore : MonoBehaviour {
 
-    public int count;
+    //static public int count;
     public Text countText;
 
 
 	// Use this for initialization
 	void Start () {
+		staticVars.count = 0;
         staticVars.yourScore = 0;
-        count = 0;
+        //count = 0;
         SetCountText();
     }
 	
     void OnTriggerEnter()
     {
-        count = count + 1;
+        staticVars.count = staticVars.count + 1;
         SetCountText();
     }
 
     void SetCountText()
     {
-        countText.text = "Stars: " + count.ToString();
+        countText.text = "Stars: " + staticVars.count.ToString();
     }
 
     void Update()
     {
-        staticVars.yourScore = count;
+        staticVars.yourScore = staticVars.count;
     }
 }

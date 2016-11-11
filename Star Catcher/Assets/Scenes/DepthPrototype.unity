@@ -1599,7 +1599,7 @@ Prefab:
     - target: {fileID: 114000012023097880, guid: 6b15e7c7029a4476fac1a1927401ba53,
         type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000011647826354, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1792,7 +1792,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 896ed678adc610b4f80bbb31e1398b49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  count: 0
   countText: {fileID: 20114549}
 --- !u!65 &810013253
 BoxCollider:
@@ -2900,7 +2899,7 @@ ParticleSystem:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1650740705}
-  serializedVersion: 4
+  serializedVersion: 2
   lengthInSec: 5
   startDelay:
     scalar: 0
@@ -2938,13 +2937,12 @@ ParticleSystem:
       m_RotationOrder: 4
     minMaxState: 0
   speed: 1
+  randomSeed: 3856409216
   looping: 1
   prewarm: 1
   playOnAwake: 0
   moveWithTransform: 0
-  autoRandomSeed: 0
   scalingMode: 2
-  randomSeed: -438558080
   InitialModule:
     serializedVersion: 2
     enabled: 1
@@ -4883,7 +4881,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 239fb27cfb39f69489e8c471d38a3704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  count: 0
   countText: {fileID: 20114549}
   lossOfPoints: 3
 --- !u!4 &1892499444 stripped
