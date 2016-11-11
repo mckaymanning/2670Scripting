@@ -1599,7 +1599,7 @@ Prefab:
     - target: {fileID: 114000012023097880, guid: 6b15e7c7029a4476fac1a1927401ba53,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4000011647826354, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
       propertyPath: m_LocalPosition.x
@@ -4885,6 +4885,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   count: 0
   countText: {fileID: 20114549}
+  lossOfPoints: 3
 --- !u!4 &1892499444 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000010786108896, guid: 0f82838fdd6f9a0449aa0af914d1c520,

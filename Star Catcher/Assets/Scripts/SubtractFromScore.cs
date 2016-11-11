@@ -6,7 +6,7 @@ public class SubtractFromScore : MonoBehaviour
 
     public int count;
     public Text countText;
-
+    public int lossOfPoints;
 
     // Use this for initialization
     void Start()
@@ -18,7 +18,7 @@ public class SubtractFromScore : MonoBehaviour
 
     void OnTriggerEnter()
     {
-        count = count - 3;
+        count = count - lossOfPoints;
         SetCountText();
     }
 

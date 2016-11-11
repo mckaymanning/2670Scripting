@@ -40,8 +40,25 @@ GameObject:
   - 114: {fileID: 114000012589878154}
   - 23: {fileID: 23000010017887108}
   - 65: {fileID: 65000012635131104}
+  - 114: {fileID: 114000012557946912}
   m_Layer: 9
   m_Name: Cactus 04
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000012013122046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000013300116980}
+  - 65: {fileID: 65000011901716704}
+  m_Layer: 23
+  m_Name: StarPoints (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,8 +76,22 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_Children:
   - {fileID: 4000014095933096}
+  - {fileID: 4000013300116980}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!4 &4000013300116980
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012013122046}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.018, y: -0.04275, z: 0}
+  m_LocalScale: {x: 1, y: 1.175, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000012877481898}
+  m_RootOrder: 1
 --- !u!4 &4000014095933096
 Transform:
   m_ObjectHideFlags: 1
@@ -151,6 +182,18 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: c1746ddd7e080d3409612819bf9d356f, type: 3}
+--- !u!65 &65000011901716704
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012013122046}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.53, z: 1}
+  m_Center: {x: 0.17, y: 0.21, z: 0}
 --- !u!65 &65000012635131104
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -163,6 +206,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.9, z: 0.75}
   m_Center: {x: 0.12, y: 0, z: 0}
+--- !u!114 &114000012557946912
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011595498416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239fb27cfb39f69489e8c471d38a3704, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 0
+  countText: {fileID: 0}
+  lossOfPoints: 1
 --- !u!114 &114000012589878154
 MonoBehaviour:
   m_ObjectHideFlags: 1
