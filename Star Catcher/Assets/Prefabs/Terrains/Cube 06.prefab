@@ -78,7 +78,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1000012203596196
 GameObject:
@@ -209,7 +209,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012203596196}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -15, z: 0}
+  m_LocalPosition: {x: 110, y: 0, z: 0}
   m_LocalScale: {x: 7, y: 7, z: 1.25}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -486,6 +486,9 @@ MonoBehaviour:
   - {fileID: 1000010726510168, guid: 4b75e2c175890b340add8b6f3844e990, type: 2}
   - {fileID: 1000013111120412, guid: acfb1b838be26ee4482a28c7a2506240, type: 2}
   - {fileID: 1000011595498416, guid: 419507e3602bbd648bfd7923ab4e5fe2, type: 2}
+  - {fileID: 1000011088649178, guid: fd0d7b3ffa7b1de439f9a9b5e9919b02, type: 2}
+  - {fileID: 1000011088649178, guid: fd0d7b3ffa7b1de439f9a9b5e9919b02, type: 2}
+  - {fileID: 1000010761995290, guid: 13465f25f35fb4c4da32ad9d8ea58a64, type: 2}
   - {fileID: 1000010761995290, guid: 13465f25f35fb4c4da32ad9d8ea58a64, type: 2}
   - {fileID: 1000010761995290, guid: 13465f25f35fb4c4da32ad9d8ea58a64, type: 2}
 --- !u!114 &114000012946878348
@@ -511,6 +514,9 @@ MonoBehaviour:
   - {fileID: 1000010726510168, guid: 4b75e2c175890b340add8b6f3844e990, type: 2}
   - {fileID: 1000013111120412, guid: acfb1b838be26ee4482a28c7a2506240, type: 2}
   - {fileID: 1000011595498416, guid: 419507e3602bbd648bfd7923ab4e5fe2, type: 2}
+  - {fileID: 1000011088649178, guid: fd0d7b3ffa7b1de439f9a9b5e9919b02, type: 2}
+  - {fileID: 1000011088649178, guid: fd0d7b3ffa7b1de439f9a9b5e9919b02, type: 2}
+  - {fileID: 1000010761995290, guid: 13465f25f35fb4c4da32ad9d8ea58a64, type: 2}
   - {fileID: 1000010761995290, guid: 13465f25f35fb4c4da32ad9d8ea58a64, type: 2}
   - {fileID: 1000010761995290, guid: 13465f25f35fb4c4da32ad9d8ea58a64, type: 2}
 --- !u!114 &114000013205750034
@@ -536,6 +542,10 @@ MonoBehaviour:
   - {fileID: 1000010726510168, guid: 4b75e2c175890b340add8b6f3844e990, type: 2}
   - {fileID: 1000013111120412, guid: acfb1b838be26ee4482a28c7a2506240, type: 2}
   - {fileID: 1000011595498416, guid: 419507e3602bbd648bfd7923ab4e5fe2, type: 2}
+  - {fileID: 1000011088649178, guid: fd0d7b3ffa7b1de439f9a9b5e9919b02, type: 2}
+  - {fileID: 1000011088649178, guid: fd0d7b3ffa7b1de439f9a9b5e9919b02, type: 2}
+  - {fileID: 1000010761995290, guid: 13465f25f35fb4c4da32ad9d8ea58a64, type: 2}
+  - {fileID: 1000010761995290, guid: 13465f25f35fb4c4da32ad9d8ea58a64, type: 2}
   - {fileID: 1000010761995290, guid: 13465f25f35fb4c4da32ad9d8ea58a64, type: 2}
   - {fileID: 1000010761995290, guid: 13465f25f35fb4c4da32ad9d8ea58a64, type: 2}
 --- !u!114 &114000013992986510
@@ -549,5 +559,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e88cbdf4bde5626438933426822ecfe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canBeRecycled: 1
+  canBeRecycled: 0
   cube: {fileID: 0}

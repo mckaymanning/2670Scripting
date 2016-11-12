@@ -13,3 +13,13 @@ EditorBuildSettings:
     path: Assets/Scenes/DepthPrototype.unity
   - enabled: 1
     path: Assets/Scenes/EndGameScene.unity
+  - enabled: 1
+    path: Assets/Scenes/PreBuilt01.unity
+  - enabled: 1
+    path: Assets/Scenes/PreBuilt02.unity
+  - enabled: 1
+    path: Assets/Scenes/PreBuilt03.unity
+  - enabled: 1
+    path: Assets/Scenes/PreBuilt04.unity
+  - enabled: 1
+    path: Assets/Scenes/PreBuilt05.unity

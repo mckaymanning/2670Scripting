@@ -5,7 +5,7 @@ public class MenuScript : MonoBehaviour {
 
     public void Loadgame()
     { 
-    SceneManager.LoadScene("DepthPrototype");
+    SceneManager.LoadScene(Random.Range(3, 7));
     }
 
     public void MainMenu()

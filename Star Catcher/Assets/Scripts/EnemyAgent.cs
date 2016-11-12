@@ -9,15 +9,18 @@ public class EnemyAgent : MonoBehaviour
     public Transform Offscreen;
     public ParticleSystem Smoke;
     public ParticleSystem Trail;
+    public Camera mainCamera;
     //public Animator myAnims;
 
-    void Start()
+    void OnWillRenderObject()
     {
         Trail.Play();
+        Chase();
+        Destroy(gameObject, 10);
        // myAgent = GetComponent<NavMeshAgent>();
     }
     // Update is called once per frame
-    void Update()
+    void Chase()
     {
 
         myAgent.destination = player.position;
