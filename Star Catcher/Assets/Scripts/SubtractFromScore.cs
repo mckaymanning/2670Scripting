@@ -19,17 +19,24 @@ public class SubtractFromScore : MonoBehaviour
 
     void OnTriggerEnter()
     {
-		staticVars.count = staticVars.count - lossOfPoints;
+
+        staticVars.count = staticVars.count - lossOfPoints;
         SetCountText();
+        
     }
 
     void SetCountText()
     {
+        if (staticVars.count < 0)
+            staticVars.count = 0;
+
         countText.text = "Stars: " + staticVars.count.ToString();
+
     }
 
     void Update()
     {
+        
         staticVars.yourScore = staticVars.count;
     }
 }

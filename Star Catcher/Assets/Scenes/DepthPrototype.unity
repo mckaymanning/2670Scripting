@@ -504,6 +504,10 @@ Prefab:
       propertyPath: canBeRecycled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011007918986, guid: e39749407ba303c42a34386c78dea926, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e39749407ba303c42a34386c78dea926, type: 2}
   m_IsPrefabParent: 0
@@ -905,6 +909,10 @@ Prefab:
       value: 
       objectReference: {fileID: 1000011088649178, guid: fd0d7b3ffa7b1de439f9a9b5e9919b02,
         type: 2}
+    - target: {fileID: 1000011764173458, guid: d63a5a77a79553448bd17d1881476acf, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d63a5a77a79553448bd17d1881476acf, type: 2}
   m_IsPrefabParent: 0
@@ -1599,7 +1607,7 @@ Prefab:
     - target: {fileID: 114000012023097880, guid: 6b15e7c7029a4476fac1a1927401ba53,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4000011647826354, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1625,6 +1633,11 @@ Prefab:
     - target: {fileID: 4000011647826354, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012023097880, guid: 6b15e7c7029a4476fac1a1927401ba53,
+        type: 2}
+      propertyPath: speed
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
@@ -1885,6 +1898,61 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!1 &911206581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 911206582}
+  - 65: {fileID: 911206584}
+  - 114: {fileID: 911206583}
+  m_Layer: 23
+  m_Name: WolfStarTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &911206582
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 911206581}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6.173746, y: 3.805007, z: 2.2206132}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 2042693535}
+  m_RootOrder: 1
+--- !u!114 &911206583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 911206581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239fb27cfb39f69489e8c471d38a3704, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countText: {fileID: 20114549}
+  lossOfPoints: 3
+--- !u!65 &911206584
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 911206581}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &960910149 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011373601002, guid: a57b6ff9889522843a050c68f6afdef6,
@@ -2933,6 +3001,7 @@ GameObject:
   - 212: {fileID: 1424095918}
   - 95: {fileID: 1424095917}
   - 114: {fileID: 1424095916}
+  - 114: {fileID: 1424095919}
   m_Layer: 0
   m_Name: WolfArt
   m_TagString: Untagged
@@ -3017,6 +3086,21 @@ SpriteRenderer:
   m_Color: {r: 1, g: 0, b: 0, a: 0.628}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1424095919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1424095914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62b9d5cd38d93fa409d4105cb4f77ab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1964538509}
+  tempPos: {x: 0, y: 0, z: 0}
+  wolf: {fileID: 2042693535}
+  canFlipWolf: 1
 --- !u!4 &1451536609 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011966730914, guid: e8aa07eb63aa1d2418997340fea8a160,
@@ -4858,12 +4942,12 @@ GameObject:
   - 23: {fileID: 1677313393}
   - 195: {fileID: 1677313392}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: UpperWolfTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!195 &1677313392
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5527,7 +5611,7 @@ GameObject:
   - 23: {fileID: 2042693532}
   - 195: {fileID: 2042693531}
   m_Layer: 0
-  m_Name: Capsule (1)
+  m_Name: LowerWolfTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5559,7 +5643,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2042693530}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 1
@@ -5614,6 +5698,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1424095915}
+  - {fileID: 911206582}
   m_Father: {fileID: 0}
   m_RootOrder: 10
 --- !u!4 &2051836419 stripped
