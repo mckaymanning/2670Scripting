@@ -6,17 +6,18 @@ public class EnemyAgent : MonoBehaviour
 
     public NavMeshAgent myAgent;
     public Transform player;
-    public Transform Offscreen;
+    
     public ParticleSystem Smoke;
     public ParticleSystem Trail;
-    public Camera mainCamera;
+    
+    
     //public Animator myAnims;
 
     void OnWillRenderObject()
     {
         Trail.Play();
         Chase();
-        Destroy(gameObject, 10);
+        Destroy(transform.parent.gameObject, 10);
        // myAgent = GetComponent<NavMeshAgent>();
     }
     // Update is called once per frame
@@ -43,6 +44,6 @@ public class EnemyAgent : MonoBehaviour
     {
         Destroy(Trail);
         Smoke.Play();
-        Destroy(gameObject, .5f);
+        Destroy(transform.parent.gameObject, .5f);
     }
 }

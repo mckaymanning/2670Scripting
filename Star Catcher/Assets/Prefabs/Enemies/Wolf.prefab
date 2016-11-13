@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myAgent: {fileID: 195000012424390974}
-  player: {fileID: 0}
+  player: {fileID: 4000013700706618, guid: 1bc7cc7822e72a24fb133b17f695f7af, type: 2}
   Offscreen: {fileID: 0}
   Smoke: {fileID: 198000012057440740}
   Trail: {fileID: 198000012571653198}
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62b9d5cd38d93fa409d4105cb4f77ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1000010685282242, guid: 1bc7cc7822e72a24fb133b17f695f7af, type: 2}
   tempPos: {x: 0, y: 0, z: 0}
   wolf: {fileID: 4000012102094840}
   canFlipWolf: 1
