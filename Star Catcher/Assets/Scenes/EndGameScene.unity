@@ -1389,6 +1389,11 @@ Prefab:
       propertyPath: speed
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114000014016322766, guid: 6b15e7c7029a4476fac1a1927401ba53,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
   m_IsPrefabParent: 0
@@ -7065,10 +7070,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myAgent: {fileID: 1720047898}
   player: {fileID: 0}
-  Offscreen: {fileID: 0}
   Smoke: {fileID: 1888847630}
   Trail: {fileID: 1414345353}
-  mainCamera: {fileID: 0}
 --- !u!95 &1888847634
 Animator:
   serializedVersion: 3

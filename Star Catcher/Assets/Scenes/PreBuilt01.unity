@@ -813,6 +813,11 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013969682614, guid: 6b15e7c7029a4476fac1a1927401ba53,
+        type: 2}
+      propertyPath: spawnFrequency
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
   m_IsPrefabParent: 0
@@ -3595,7 +3600,7 @@ MonoBehaviour:
   speed: 6
   depthSpeed: 50
   gravity: 0.75
-  jumpSpeed: 10
+  jumpSpeed: 9
   depthPos: 0
   jumpCount: 1
   jumpCountMax: 2
