@@ -41,7 +41,6 @@ GameObject:
   - 114: {fileID: 114000014279025602}
   - 114: {fileID: 114000011224755358}
   - 114: {fileID: 114000010475783162}
-  - 114: {fileID: 114000012868435298}
   m_Layer: 18
   m_Name: Star
   m_TagString: Untagged
@@ -153,7 +152,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012308700640}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 19.47497, y: 12.955479, z: 0.8692255}
+  m_LocalPosition: {x: 8.17, y: 12.955479, z: -0.20077515}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_Children:
@@ -378,22 +377,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endTime: 3
---- !u!114 &114000012868435298
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012308700640}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4507d39235b470a4ba68f6c0dfb8d8a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceTime: 10
-  forceDuration: 1
-  forceRange: 3000
-  torqueRange: 30
-  endTime: 10
 --- !u!114 &114000014165760512
 MonoBehaviour:
   m_ObjectHideFlags: 1

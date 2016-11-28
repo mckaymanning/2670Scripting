@@ -231,7 +231,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myAgent: {fileID: 195000012424390974}
   player: {fileID: 4000013700706618, guid: 1bc7cc7822e72a24fb133b17f695f7af, type: 2}
-  Offscreen: {fileID: 0}
   Smoke: {fileID: 198000012057440740}
   Trail: {fileID: 198000012571653198}
 --- !u!114 &114000013040296470
@@ -722,7 +721,7 @@ ParticleSystem:
       minMaxState: 0
     randomizeRotationDirection: 0
     gravityModifier: 0
-    maxNumParticles: 50
+    maxNumParticles: 30
     size3D: 0
     rotation3D: 0
   ShapeModule:
