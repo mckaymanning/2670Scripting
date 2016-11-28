@@ -23,7 +23,7 @@ public class EnemyAgent : MonoBehaviour
 
    void Update ()
     {
-        FlipOrNot();
+        WolfFlipper();
     }
 
     void OnWillRenderObject()
@@ -39,14 +39,7 @@ public class EnemyAgent : MonoBehaviour
        // myAgent = GetComponent<NavMeshAgent>();
     }
 
-    void FlipOrNot()
-    {
-        if (stolen == true || bored == true)
-            TurnWolf();
-        else
-            WolfFlipper();
-    }
-
+  
 
     void StayOrGo ()
     {
@@ -96,6 +89,7 @@ public class EnemyAgent : MonoBehaviour
 
     void OnTriggerEnter()
     {
+        canFlipWolf = false;
         stolen = true;
         StayOrGo();
         //Destroy(Trail);
@@ -107,28 +101,15 @@ public class EnemyAgent : MonoBehaviour
     {
         if (player.transform.position.x < wolf.transform.position.x && canFlipWolf)
         {
-            wolf.Rotate(0, -180, 0);
-            canFlipWolf = true;
+            wolf.Rotate(0, 180, 0);
+            canFlipWolf = false;
         }
         if (player.transform.position.x > wolf.transform.position.x && !canFlipWolf)
         {
-            wolf.Rotate(0, 180, 0);
-            canFlipWolf = false;
-        }
-    }
-
-
-    void TurnWolf()
-    {
-        if (cube.transform.position.x < wolf.transform.position.x && canFlipWolf)
-        {
             wolf.Rotate(0, -180, 0);
             canFlipWolf = true;
         }
-        if (cube.transform.position.x > wolf.transform.position.x && !canFlipWolf)
-        {
-            wolf.Rotate(0, 180, 0);
-            canFlipWolf = false;
-        }
     }
+
+
 }

@@ -22,7 +22,6 @@ GameObject:
   - 114: {fileID: 114000013413664426}
   - 23: {fileID: 23000012390954594}
   - 65: {fileID: 65000012423828770}
-  - 114: {fileID: 114000012212358022}
   m_Layer: 9
   m_Name: Cactus 01
   m_TagString: Untagged
@@ -206,20 +205,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.73962945, y: 1, z: 1}
   m_Center: {x: 0.1301856, y: -0.00000011920929, z: 0}
---- !u!114 &114000012212358022
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011026711676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 239fb27cfb39f69489e8c471d38a3704, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  count: 0
-  countText: {fileID: 0}
-  lossOfPoints: 1
 --- !u!114 &114000013413664426
 MonoBehaviour:
   m_ObjectHideFlags: 1
