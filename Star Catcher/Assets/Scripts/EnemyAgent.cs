@@ -15,24 +15,19 @@ public class EnemyAgent : MonoBehaviour
 
 
     
-    public Vector3 tempPos;
-    public Transform wolf;
+ 
 
 
-    public bool canFlipWolf = true;
 
-   void Update ()
-    {
-        WolfFlipper();
-    }
+
 
     void OnWillRenderObject()
     {
 
-        Trail.Play();
-        
+        Trail.Play(); 
         StayOrGo();
-        StartCoroutine(GotBored());
+		Invoke ("Runaway", 5);
+        //StartCoroutine(GotBored());
         
         //Chase();
         //Destroy(transform.parent.gameObject, 10);
@@ -54,14 +49,16 @@ public class EnemyAgent : MonoBehaviour
 
     }
 
-    IEnumerator GotBored()
-    {
-        yield return new WaitForSeconds(8);
-        bored = true;
-        StayOrGo();
-        yield return new WaitForSeconds(10);
-        Destroy(transform.parent.gameObject);
-    }
+
+
+//    IENumerator GotBored()
+//    {
+//        yield return new WaitForSeconds(8);
+//        bored = true;
+//        StayOrGo();
+//        yield return new WaitForSeconds(10);
+//        Destroy(transform.parent.gameObject);
+//    }
     
     void Chase()
     {
@@ -73,7 +70,10 @@ public class EnemyAgent : MonoBehaviour
     void Runaway()
     {
         myAgent.destination = cube.position;
+		Destroy (transform.parent.gameObject, 12);
     }
+
+
     //if (myAgent.isOnOffMeshLink)
     //{
     //    myAnims.SetBool("jump", true);
@@ -89,7 +89,7 @@ public class EnemyAgent : MonoBehaviour
 
     void OnTriggerEnter()
     {
-        canFlipWolf = false;
+
         stolen = true;
         StayOrGo();
         //Destroy(Trail);
@@ -97,19 +97,6 @@ public class EnemyAgent : MonoBehaviour
         Destroy(transform.parent.gameObject, 10);
     }
 
-    void WolfFlipper()
-    {
-        if (player.transform.position.x < wolf.transform.position.x && canFlipWolf)
-        {
-            wolf.Rotate(0, 180, 0);
-            canFlipWolf = false;
-        }
-        if (player.transform.position.x > wolf.transform.position.x && !canFlipWolf)
-        {
-            wolf.Rotate(0, -180, 0);
-            canFlipWolf = true;
-        }
-    }
 
 
 }

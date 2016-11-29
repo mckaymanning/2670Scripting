@@ -6,11 +6,12 @@ public class WolfArtFlip : MonoBehaviour
 
     public GameObject player;
     public GameObject cube;
-    public Vector3 tempPos;
+	public GameObject mytarget;
+	public Vector3 tempPos;
     public Transform wolf;
     
     
-    public bool canFlipWolf = true;
+	public bool canFlipWolf = false;
 
     void Update ()
     {
@@ -26,20 +27,75 @@ public class WolfArtFlip : MonoBehaviour
     //        WolfFlipper();
     //} 
 
-    void WolfFlipper()
-    {
-        if (player.transform.position.x < wolf.transform.position.x && canFlipWolf)
-        {
-            wolf.Rotate(0, -180, 0);
-            canFlipWolf = false;
-        }
-        if (player.transform.position.x > wolf.transform.position.x && !canFlipWolf)
-        {
-            wolf.Rotate(0, 180, 0);
-            canFlipWolf = true;
-        }
-    }
+	void Start()
+	{
+		mytarget = player;
+	}
 
+
+	void switchTarget()
+	{
+		mytarget = cube;
+	}
+
+	void OnTriggerEnter()
+	{
+		switchTarget ();
+	}
+
+	void OnWillRenderObject()
+	{
+		Invoke ("switchTarget", 5);
+	}
+
+	void WolfFlipper()
+	{
+		if (mytarget.transform.position.x < wolf.transform.position.x && canFlipWolf)
+		{
+			wolf.Rotate(0, -180, 0);
+			canFlipWolf = false;
+		}
+		if (mytarget.transform.position.x > wolf.transform.position.x && !canFlipWolf)
+		{
+			wolf.Rotate(0, 180, 0);
+			canFlipWolf = true;
+		}
+	}
+
+
+
+//    void WolfFlipper()
+//    {
+//        if (player.transform.position.x < wolf.transform.position.x && canFlipWolf)
+//        {
+//            wolf.Rotate(0, -180, 0);
+//            canFlipWolf = false;
+//        }
+//        if (player.transform.position.x > wolf.transform.position.x && !canFlipWolf)
+//        {
+//            wolf.Rotate(0, 180, 0);
+//            canFlipWolf = true;
+//        }
+//    }
+//	void OnTriggerEnter()
+//	{
+//		canFlipWolf = false;
+//	}
+
+//	void Falsify()
+//	{
+//		canFlipWolf = false;
+//	}
+
+//	void OnTriggerEnter()
+//	{
+//		Falsify ();
+//	}
+
+//	void OnWillRenderObject()
+//	{
+//		Invoke ("Falsify", 5);
+//	}
 
     void Runaway()
     {
