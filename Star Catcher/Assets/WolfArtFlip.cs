@@ -45,7 +45,7 @@ public class WolfArtFlip : MonoBehaviour
 
 	void OnWillRenderObject()
 	{
-		Invoke ("switchTarget", 5);
+		Invoke ("switchTarget", 8);
 	}
 
 	void WolfFlipper()

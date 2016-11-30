@@ -5,6 +5,7 @@ public class EnemyAgent : MonoBehaviour
 {
 
     public NavMeshAgent myAgent;
+    public Transform myTarget;
     public Transform player;
     public Transform cube;
     public ParticleSystem Smoke;
@@ -15,63 +16,88 @@ public class EnemyAgent : MonoBehaviour
 
 
     
- 
+    void Start()
+    {
+        myTarget = player;
+        Chase();
+    }
 
+    void Update()
+    {
+        Chase();
+    }
 
+    void switchTarget()
+    {
+        myTarget = cube;
+        Destroy(transform.parent.gameObject, 12);
+    }
 
-
+    void OnTriggerEnter()
+    {
+        switchTarget();
+        
+    }
 
     void OnWillRenderObject()
     {
-
-        Trail.Play(); 
-        StayOrGo();
-		Invoke ("Runaway", 5);
-        //StartCoroutine(GotBored());
-        
-        //Chase();
-        //Destroy(transform.parent.gameObject, 10);
-       // myAgent = GetComponent<NavMeshAgent>();
-    }
-
-  
-
-    void StayOrGo ()
-    {
-        if (stolen == true || bored == true)
-        {
-            Runaway();
-            
-        }
-        else
-            Chase();
-       
-
+        Trail.Play();
+        Invoke("switchTarget", 8);
     }
 
 
+    //  void OnWillRenderObject()
+    //  {
 
-//    IENumerator GotBored()
-//    {
-//        yield return new WaitForSeconds(8);
-//        bored = true;
-//        StayOrGo();
-//        yield return new WaitForSeconds(10);
-//        Destroy(transform.parent.gameObject);
-//    }
-    
+    //      Trail.Play(); 
+    //      StayOrGo();
+    //Invoke ("switchTarget", 5);
+
+    //StartCoroutine(GotBored());
+
+    //Chase();
+    //Destroy(transform.parent.gameObject, 10);
+    // myAgent = GetComponent<NavMeshAgent>();
+    //}
+
+
+
+    //void StayOrGo ()
+    //{
+    //    if (stolen == true || bored == true)
+    //    {
+    //        Runaway();
+
+    //    }
+    //    else
+    //        Chase();
+
+
+    //}
+
+
+
+    //    IENumerator GotBored()
+    //    {
+    //        yield return new WaitForSeconds(8);
+    //        bored = true;
+    //        StayOrGo();
+    //        yield return new WaitForSeconds(10);
+    //        Destroy(transform.parent.gameObject);
+    //    }
+
     void Chase()
     {
 
-        myAgent.destination = player.position;
+        myAgent.destination = myTarget.position;
     }
 
 
-    void Runaway()
-    {
-        myAgent.destination = cube.position;
-		Destroy (transform.parent.gameObject, 12);
-    }
+    //  void Runaway()
+    //  {
+    //      myAgent.destination = cube.position;
+    //Destroy (transform.parent.gameObject, 12);
+    //  }
 
 
     //if (myAgent.isOnOffMeshLink)
@@ -87,15 +113,15 @@ public class EnemyAgent : MonoBehaviour
     //}
 
 
-    void OnTriggerEnter()
-    {
+    //void OnTriggerEnter()
+    //{
 
-        stolen = true;
-        StayOrGo();
-        //Destroy(Trail);
-        //Smoke.Play();
-        Destroy(transform.parent.gameObject, 10);
-    }
+    //    stolen = true;
+    //    StayOrGo();
+    //    //Destroy(Trail);
+    //    //Smoke.Play();
+    //    Destroy(transform.parent.gameObject, 10);
+    //}
 
 
 
