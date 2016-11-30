@@ -10,22 +10,22 @@ public class EnemyAgent : MonoBehaviour
     public Transform cube;
     public ParticleSystem Smoke;
     public ParticleSystem Trail;
-    public bool stolen = false;
-    public bool bored = false;
+    //public bool stolen = false;
+    //public bool bored = false;
     //public Animator myAnims;
 
 
-    
+
     void Start()
     {
         myTarget = player;
-        Chase();
+        //Chase();
     }
 
-    void Update()
-    {
-        Chase();
-    }
+    //void Update()
+    //{
+    //    Chase();
+    //}
 
     void switchTarget()
     {
@@ -41,8 +41,15 @@ public class EnemyAgent : MonoBehaviour
 
     void OnWillRenderObject()
     {
+        Chase();
         Trail.Play();
         Invoke("switchTarget", 8);
+    }
+
+    void Chase()
+    {
+
+        myAgent.destination = myTarget.position;
     }
 
 
@@ -86,11 +93,6 @@ public class EnemyAgent : MonoBehaviour
     //        Destroy(transform.parent.gameObject);
     //    }
 
-    void Chase()
-    {
-
-        myAgent.destination = myTarget.position;
-    }
 
 
     //  void Runaway()
