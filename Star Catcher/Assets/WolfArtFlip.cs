@@ -38,15 +38,18 @@ public class WolfArtFlip : MonoBehaviour
 		mytarget = cube;
 	}
 
+
 	void OnTriggerEnter()
 	{
 		switchTarget ();
 	}
 
+
 	void OnWillRenderObject()
 	{
 		Invoke ("switchTarget", 8);
 	}
+
 
 	void WolfFlipper()
 	{
