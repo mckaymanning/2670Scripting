@@ -5,11 +5,11 @@ public class fades : MonoBehaviour {
 
    
     public GameObject logo;
-
+    
     void Start ()
     {
         logo.SetActive(false);
-        Invoke("fadeIn", 3);
+        Invoke("fadeIn", 1);
 	}
 
     void fadeIn()
