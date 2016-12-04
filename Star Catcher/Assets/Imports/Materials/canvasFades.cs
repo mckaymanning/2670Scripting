@@ -10,7 +10,7 @@ public class canvasFades : MonoBehaviour
     void Start()
     {
         myThingy.SetActive(false);
-        Invoke("fadeIn", 7.5f);
+        Invoke("fadeIn", 7.75f);
     }
 
     void fadeIn()
