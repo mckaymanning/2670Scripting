@@ -12,4 +12,10 @@ public class MenuScript : MonoBehaviour {
     {
         SceneManager.LoadScene("SplashPrototype");
     }
+
+    public void QuitTheGame()
+    {
+        Application.Quit();
+
+    }
 }
