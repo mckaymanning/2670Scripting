@@ -7,8 +7,10 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: Assets/DepthPrototype.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SplashPrototype.unity
+  - enabled: 1
+    path: Assets/Scenes/OpeningPrototype.unity
   - enabled: 1
     path: Assets/Scenes/DepthPrototype.unity
   - enabled: 1

@@ -7,7 +7,7 @@ public class SubtractFromScore : MonoBehaviour
     //public int count;
     public Text countText;
     public int lossOfPoints;
-
+    public ParticleSystem starSteal;
     // Use this for initialization
     void Start()
     {
@@ -19,7 +19,7 @@ public class SubtractFromScore : MonoBehaviour
 
     void OnTriggerEnter()
     {
-
+        starSteal.Play();
         staticVars.count = staticVars.count - lossOfPoints;
         SetCountText();
         
@@ -30,7 +30,7 @@ public class SubtractFromScore : MonoBehaviour
         if (staticVars.count < 0)
             staticVars.count = 0;
 
-        countText.text = "Stars: " + staticVars.count.ToString();
+        countText.text = "Stars : " + staticVars.count.ToString();
 
     }
 

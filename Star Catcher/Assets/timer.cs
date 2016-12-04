@@ -34,10 +34,10 @@ void Start()
     void checkTime()
     {
         if (seconds >= doubleDigits)
-             timerText.text = minutes + ":" + seconds;
+             timerText.text = minutes + " : " + seconds;
           else 
           {
-             timerText.text = minutes + ":0" + seconds;
+             timerText.text = minutes + " : 0" + seconds;
           }
     }
 

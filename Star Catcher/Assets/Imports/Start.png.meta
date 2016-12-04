@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: ee92df3d550f6b14d93269013dca37a3
-timeCreated: 1480809851
+timeCreated: 1480820397
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -58,10 +58,10 @@ TextureImporter:
       name: Start_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 402
-        width: 3000
-        height: 498
+        x: 743
+        y: 428
+        width: 1518
+        height: 401
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -71,10 +71,10 @@ TextureImporter:
       name: Start_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 743
         y: 0
-        width: 3000
-        height: 379
+        width: 1514
+        height: 412
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
