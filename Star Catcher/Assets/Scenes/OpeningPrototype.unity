@@ -565,6 +565,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countText: {fileID: 0}
   lossOfPoints: 3
+  starSteal: {fileID: 0}
 --- !u!65 &64909697
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1297,6 +1298,46 @@ Transform:
   m_PrefabParentObject: {fileID: 4000010231501450, guid: 1b81782cdc21f544ab0171aec16a8578,
     type: 2}
   m_PrefabInternal: {fileID: 183649376}
+--- !u!1 &353981841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 353981843}
+  - 114: {fileID: 353981842}
+  m_Layer: 0
+  m_Name: ResetTimer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &353981842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 353981841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13e511851bdc4f84fbb076d34e72d441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &353981843
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 353981841}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 81.05615, y: 1.644165, z: 1.0273438}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
 --- !u!1 &379588919
 GameObject:
   m_ObjectHideFlags: 0
