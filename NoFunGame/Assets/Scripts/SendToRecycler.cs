@@ -4,20 +4,29 @@ using System;
 public class SendToRecycler : MonoBehaviour
 {
 
-    public static Action<SendToRecycler> SendThis;
-    public bool canRecycle;
+    public static Action<SendToRecycler> RecycleAction;
+    public bool canBeRecycled = false;
+    public Transform cube;
 
 
     void Start()
     {
-        if (canRecycle)
-            SendThis(this);
-
+        cube = this.GetComponent<Transform>();
+        if (RecycleAction != null && canBeRecycled)
+        {
+            RecycleAction(this);
+        }
     }
 
     void OnTriggerEnter()
     {
-        canRecycle = true;
+        canBeRecycled = true;
         Start();
     }
+
+    void OnTriggerExit()
+    {
+        canBeRecycled = false;
+    }
+
 }

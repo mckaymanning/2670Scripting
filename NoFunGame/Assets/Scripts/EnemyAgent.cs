@@ -1,17 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-public class EnemyAgent : MonoBehaviour {
+using System;
+public class EnemyAgent : MonoBehaviour{
 
 
 
-    public Transform curTarget;
+    public Vector3 curTarget;
     public NavMeshAgent myAgent;
 
 
+    //void OnBecameInvisible()
     void Start()
     {
         
+        myAgent.speed = 6;
+        // Invoke("Hide", 5);
+    }
+
+    void OnBecameVisible()
+    {
         Hide();
     }
 
@@ -20,11 +28,26 @@ public class EnemyAgent : MonoBehaviour {
     //    Invoke("ChangeHidingSpot", 5);
     //}
 
+    //    void ChangeTarget()
+    //{
+    //    curTarget = UnityEngine.Random.Range(0, RecyclableList.Count - 1);
+    //}
+
         void Hide()
     {
-        myAgent.destination = curTarget.position;
+        myAgent.destination = curTarget;
     }
 
+    void OnBecameInvisible()
+    {
+        Invoke("ChangeTarget", 3);
+    }
+
+    void ChangeTarget()
+    {
+        curTarget = GetComponent<RecycleHidingModules>().newLocation;
+        Hide();
+    }
     //ChangeHidingSpot()
     //{
        
