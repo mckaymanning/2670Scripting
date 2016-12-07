@@ -11,7 +11,7 @@ public class ClearClick : MonoBehaviour {
         cube.GetComponent<Renderer>().enabled = false;
     }
 
-    void OnMouseUp()
+    void OnMouseExit()
     {
         cube.GetComponent<Renderer>().enabled = true;
     }
