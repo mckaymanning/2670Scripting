@@ -883,7 +883,7 @@ Prefab:
     - target: {fileID: 114000013969682614, guid: 6b15e7c7029a4476fac1a1927401ba53,
         type: 2}
       propertyPath: spawnFrequency
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4000012591621454, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
