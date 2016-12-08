@@ -12,7 +12,7 @@ public class ArtFlip : MonoBehaviour
 		switch (_keyCode)
 		{
 		case KeyCode.LeftArrow:
-			if (forward)
+			if (forward && (Input.GetAxis("Horizontal") < 0))
 			{
 				characterArt.Rotate(0, 180, 0);
 				forward = false;
@@ -20,7 +20,7 @@ public class ArtFlip : MonoBehaviour
 			break;
 
 		case KeyCode.RightArrow:
-			if (!forward)
+			if (!forward&& (Input.GetAxis("Horizontal") > 0))
 			{
 				characterArt.Rotate(0, 180, 0);
 				forward = true;

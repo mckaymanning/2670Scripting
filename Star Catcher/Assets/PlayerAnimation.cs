@@ -28,15 +28,17 @@ public class PlayerAnimation : MonoBehaviour {
        // if (Input.GetKeyUp(KeyCode.Space))
        //    myAnimator.SetBool("isGrounded", false);
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-            myAnimator.SetBool("isRunning", true);
-        if (Input.GetKeyUp(KeyCode.RightArrow))
-            myAnimator.SetBool("isRunning", false);
+		myAnimator.SetBool("isRunning", false);
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.RightArrow))
             myAnimator.SetBool("isRunning", true);
-        if (Input.GetKeyUp(KeyCode.LeftArrow))
-            myAnimator.SetBool("isRunning", false);
+        //if (Input.GetKeyUp(KeyCode.RightArrow))
+            //.SetBool("isRunning", false);
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+            myAnimator.SetBool("isRunning", true);
+        //if (Input.GetKeyUp(KeyCode.LeftArrow))
+            //myAnimator.SetBool("isRunning", false);
 
     }
 }

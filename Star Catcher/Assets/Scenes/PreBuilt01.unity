@@ -593,7 +593,9 @@ Prefab:
       propertyPath: countText
       value: 
       objectReference: {fileID: 20114549}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 95000012000518728, guid: 1bc7cc7822e72a24fb133b17f695f7af, type: 2}
+    - {fileID: 114000012550193154, guid: 1bc7cc7822e72a24fb133b17f695f7af, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 1bc7cc7822e72a24fb133b17f695f7af, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &345225783 stripped
@@ -2109,7 +2111,7 @@ ParticleSystem:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1650740705}
-  serializedVersion: 4
+  serializedVersion: 2
   lengthInSec: 5
   startDelay:
     scalar: 0
@@ -2147,13 +2149,12 @@ ParticleSystem:
       m_RotationOrder: 4
     minMaxState: 0
   speed: 1
+  randomSeed: 3856409216
   looping: 1
   prewarm: 1
   playOnAwake: 0
   moveWithTransform: 0
-  autoRandomSeed: 0
   scalingMode: 2
-  randomSeed: -438558080
   InitialModule:
     serializedVersion: 2
     enabled: 1

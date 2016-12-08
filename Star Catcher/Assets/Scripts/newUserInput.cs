@@ -12,11 +12,11 @@ public class newUserInput : MonoBehaviour
     {
 
 
-        if (Input.GetKeyDown(KeyCode.RightArrow) && UserInput != null)
+        if (Input.GetKey(KeyCode.RightArrow) && UserInput != null)
         {
             UserInput(KeyCode.RightArrow);
         }
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && UserInput != null)
+        if (Input.GetKey(KeyCode.LeftArrow) && UserInput != null)
         {
             UserInput(KeyCode.LeftArrow);
         }
