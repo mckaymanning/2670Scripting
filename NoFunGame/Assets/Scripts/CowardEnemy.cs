@@ -7,8 +7,13 @@ public class CowardEnemy : Enemy
 	public override void Shout()
 	{
 		//base.Shout ();
-		print ("PLEASE DON'T KILL ME! I HAVE DREAMS AND ASPIRATIONS");
+		print ("Coward Enemy: PLEASE DON'T KILL ME! I HAVE DREAMS AND ASPIRATIONS");
 	}
+
+    public override void Watching()
+    {
+        gameObject.transform.LookAt(offScreen.transform.position);
+    }
 
 	public override void Chase()
 	{

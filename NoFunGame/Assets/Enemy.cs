@@ -14,12 +14,19 @@ public class Enemy : MonoBehaviour {
 
 	void OnTriggerStay()
 	{
+        Watching();
 		Chase ();
 	}
 
+    public virtual void Watching()
+    {
+        gameObject.transform.LookAt(myTarget.transform.position);
+        
+    }
+
 	public virtual void Shout()
 	{
-		print ("I'm gonna get you!");
+		print ("Enemy: I'm gonna get you!");
 	}
 
 

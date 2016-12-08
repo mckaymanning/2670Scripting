@@ -3,15 +3,19 @@ using System.Collections;
 
 public class ClearClick : MonoBehaviour {
 
-    public GameObject cube;
+    private GameObject cube;
 
+    void Start()
+    {
+        cube = gameObject;
+    }
 
     void OnMouseDown()
     {
         cube.GetComponent<Renderer>().enabled = false;
     }
 
-    void OnMouseExit()
+    void OnMouseUp()
     {
         cube.GetComponent<Renderer>().enabled = true;
     }

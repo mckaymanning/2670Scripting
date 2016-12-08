@@ -45,7 +45,7 @@ public class EnemyAgent : MonoBehaviour{
 
     void ChangeTarget()
     {
-        curTarget = GetComponent<RecycleHidingModules>().newLocation;
+   
         Hide();
     }
     //ChangeHidingSpot()
