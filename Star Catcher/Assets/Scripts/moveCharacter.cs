@@ -7,7 +7,7 @@ public class moveCharacter : MonoBehaviour {
     //This is the character controller component
     public CharacterController myCC;
     public AudioSource PlayerSound;
-    public AudioClip Landing;
+    public AudioClip Jump;
     public float volLowRange = .5f;
     public float volHighRange = 1.0f;
     //Temp var of datatype vector3 to move the character
@@ -36,31 +36,31 @@ public class moveCharacter : MonoBehaviour {
 
 
     //Coroutine for sliding character.
-    IEnumerator Slide()
-    {
+    //IEnumerator Slide()
+    //{
 
-        //Set a temp var to the value of slideDuration
-        int durationTemp = slideDuration;
-        //
-        float speedTemp = speed;
-        speed += speed;
-        //While loop runs "while" the slideDuration is greater than 0
-        while (slideDuration > 0)
-        {
-            //Decrement the slideDuration
-            slideDuration--;
-            //yeild "holds the coroutine"
-            //return "sends" to the coroutine to do an operation while yielding
-            //new creates an instance of an object
-            //WaitForSeconds is an object that waits for a duration of time
-            yield return new WaitForSeconds(slideTime);
+    //    //Set a temp var to the value of slideDuration
+    //    int durationTemp = slideDuration;
+    //    //
+    //    float speedTemp = speed;
+    //    speed += speed;
+    //    //While loop runs "while" the slideDuration is greater than 0
+    //    while (slideDuration > 0)
+    //    {
+    //        //Decrement the slideDuration
+    //        slideDuration--;
+    //        //yeild "holds the coroutine"
+    //        //return "sends" to the coroutine to do an operation while yielding
+    //        //new creates an instance of an object
+    //        //WaitForSeconds is an object that waits for a duration of time
+    //        yield return new WaitForSeconds(slideTime);
 
-        }
-        speed = speedTemp;
+    //    }
+    //    speed = speedTemp;
 
-        slideDuration = durationTemp;
+    //    slideDuration = durationTemp;
 
-    }
+    //}
 
     //void StartGAmeHandler()
     //{
@@ -94,6 +94,8 @@ public class moveCharacter : MonoBehaviour {
             //incrementing the jumpcount by one
             jumpCount++;
             //adding the jumpSpeed var to the tempPos var
+            float vol = Random.Range(volLowRange, volHighRange);
+            PlayerSound.PlayOneShot(Jump, vol);
             tempPos.y = jumpSpeed;
             //if (myCC.isGrounded)
             //{
@@ -105,20 +107,20 @@ public class moveCharacter : MonoBehaviour {
         }
 
 
-        //Start Sliding
-        if (Input.GetKey(KeyCode.RightArrow) && Input.GetKeyDown(KeyCode.S))
-        {
-            //StartCoroutine is a function that calls a coroutine. Use the coroutine in the argument
-            StartCoroutine(Slide());
+        ////Start Sliding
+        //if (Input.GetKey(KeyCode.RightArrow) && Input.GetKeyDown(KeyCode.S))
+        //{
+        //    //StartCoroutine is a function that calls a coroutine. Use the coroutine in the argument
+        //    StartCoroutine(Slide());
 
-        }
+        //}
 
-        if (Input.GetKey(KeyCode.LeftArrow) && Input.GetKeyDown(KeyCode.S))
-        { 
-            //StartCoroutine is a function that calls a coroutine. Use the coroutine in the argument
-            StartCoroutine(Slide());
+        //if (Input.GetKey(KeyCode.LeftArrow) && Input.GetKeyDown(KeyCode.S))
+        //{ 
+        //    //StartCoroutine is a function that calls a coroutine. Use the coroutine in the argument
+        //    StartCoroutine(Slide());
 
-        }
+        //}
 
 
     

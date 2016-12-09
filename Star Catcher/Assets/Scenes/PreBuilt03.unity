@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43836397, g: 0.48638487, b: 0.56659794, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -417,16 +417,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114000010116117886, guid: d63a5a77a79553448bd17d1881476acf,
+    - target: {fileID: 114000013971151774, guid: d63a5a77a79553448bd17d1881476acf,
         type: 2}
-      propertyPath: player
+      propertyPath: countText
       value: 
-      objectReference: {fileID: 1534337427}
-    - target: {fileID: 114000010116117886, guid: d63a5a77a79553448bd17d1881476acf,
-        type: 2}
-      propertyPath: cube
-      value: 
-      objectReference: {fileID: 1534337424}
+      objectReference: {fileID: 163688390}
     - target: {fileID: 114000010834789040, guid: d63a5a77a79553448bd17d1881476acf,
         type: 2}
       propertyPath: player
@@ -437,11 +432,16 @@ Prefab:
       propertyPath: cube
       value: 
       objectReference: {fileID: 1534337425}
-    - target: {fileID: 114000013971151774, guid: d63a5a77a79553448bd17d1881476acf,
+    - target: {fileID: 114000010116117886, guid: d63a5a77a79553448bd17d1881476acf,
         type: 2}
-      propertyPath: countText
+      propertyPath: player
       value: 
-      objectReference: {fileID: 163688390}
+      objectReference: {fileID: 1534337427}
+    - target: {fileID: 114000010116117886, guid: d63a5a77a79553448bd17d1881476acf,
+        type: 2}
+      propertyPath: cube
+      value: 
+      objectReference: {fileID: 1534337424}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d63a5a77a79553448bd17d1881476acf, type: 2}
   m_IsPrefabParent: 0
