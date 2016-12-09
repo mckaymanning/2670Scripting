@@ -94,6 +94,7 @@ public class moveCharacter : MonoBehaviour {
             //incrementing the jumpcount by one
             jumpCount++;
             //adding the jumpSpeed var to the tempPos var
+           // myAnimator.SetBool(Jumped, true);
             float vol = Random.Range(volLowRange, volHighRange);
             PlayerSound.PlayOneShot(Jump, vol);
             tempPos.y = jumpSpeed;
