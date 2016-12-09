@@ -5,6 +5,8 @@ public class PlayerAnimation : MonoBehaviour {
 
 
     public Animator myAnimator;
+    int jumpHash = Animator.StringToHash("Jump");
+    int groundHash = Animator.StringToHash("Grounded");
     //private object myBody;
 
 
@@ -18,17 +20,24 @@ public class PlayerAnimation : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        
+        if (Input.GetKeyDown(KeyCode.Space) && moveCharacter.jumpCount < moveCharacter.jumpCountMax - 1)
+        {
 
-        //myAnimator.SetFloat("vSpeed", GetComponentInParent<CharacterController>().velocity.y);
+            myAnimator.SetTrigger(jumpHash);
+        }
+
+        if (moveCharacter.myCC.isGrounded)
+            myAnimator.SetTrigger(groundHash);
+
+            //myAnimator.SetFloat("vSpeed", GetComponentInParent<CharacterController>().velocity.y);
 
 
-       //if (Input.GetKeyDown(KeyCode.Space))
-       //    myAnimator.SetBool("isGrounded", false);
-       // if (Input.GetKeyUp(KeyCode.Space))
-       //    myAnimator.SetBool("isGrounded", false);
+            //if (Input.GetKeyDown(KeyCode.Space))
+            //    myAnimator.SetBool("isGrounded", false);
+            // if (Input.GetKeyUp(KeyCode.Space))
+            //    myAnimator.SetBool("isGrounded", false);
 
-		myAnimator.SetBool("isRunning", false);
+            myAnimator.SetBool("isRunning", false);
 
         if (Input.GetKey(KeyCode.RightArrow))
             myAnimator.SetBool("isRunning", true);

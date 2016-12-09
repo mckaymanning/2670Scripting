@@ -5,7 +5,7 @@ using UnityEngine.Audio;
 public class moveCharacter : MonoBehaviour {
 
     //This is the character controller component
-    public CharacterController myCC;
+    public static CharacterController myCC;
     public AudioSource PlayerSound;
     public AudioClip Jump;
     public float volLowRange = .5f;
@@ -19,19 +19,19 @@ public class moveCharacter : MonoBehaviour {
     public float gravity = 1;
     public float jumpSpeed = 1;
     public float depthPos = 0;
-    public int jumpCount = 0;
-    public int jumpCountMax = 2;
+    public static int jumpCount = 0;
+    public static int jumpCountMax = 2;
     //Sliding vars
     public int slideDuration = 100;
     public float slideTime = 0.01f;
     
-    public Animator myAnimator;
-
+    //public Animator myAnimator;
 
 
     void Start()
     {
-        myAnimator = GetComponent<Animator>();
+        myCC = GetComponent<CharacterController>();
+       // myAnimator = GetComponent<Animator>();
     }
 
 
@@ -87,14 +87,13 @@ public class moveCharacter : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space) && jumpCount < jumpCountMax-1)
         {
 
-            
             //float vol = Random.Range(volLowRange, volHighRange);
             //source.PlayOneShot(jumpSound, vol);
 
             //incrementing the jumpcount by one
             jumpCount++;
             //adding the jumpSpeed var to the tempPos var
-           // myAnimator.SetBool(Jumped, true);
+            //myAnimator.SetBool(Jumped, true);
             float vol = Random.Range(volLowRange, volHighRange);
             PlayerSound.PlayOneShot(Jump, vol);
             tempPos.y = jumpSpeed;

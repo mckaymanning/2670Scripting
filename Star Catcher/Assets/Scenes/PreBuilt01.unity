@@ -264,6 +264,11 @@ Prefab:
       propertyPath: speed
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011714489868, guid: 1bc7cc7822e72a24fb133b17f695f7af,
+        type: 2}
+      propertyPath: myAnimator
+      value: 
+      objectReference: {fileID: 1361039375}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1bc7cc7822e72a24fb133b17f695f7af, type: 2}
   m_IsPrefabParent: 0
@@ -1076,7 +1081,7 @@ Prefab:
     - target: {fileID: 114000012023097880, guid: 6b15e7c7029a4476fac1a1927401ba53,
         type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
@@ -1950,6 +1955,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!95 &1361039375 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95000012397627332, guid: 1bc7cc7822e72a24fb133b17f695f7af,
+    type: 2}
+  m_PrefabInternal: {fileID: 173480175}
 --- !u!1 &1362485034 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000011176178778, guid: 1bc7cc7822e72a24fb133b17f695f7af,
