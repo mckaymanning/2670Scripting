@@ -7,6 +7,14 @@ public class AddToScore : MonoBehaviour {
     public Text countText;
     public ParticleSystem starcollect;
 
+    public AudioSource StarSource;
+
+    public AudioClip StarPop;
+
+    public float volLowRange = .5f;
+    public float volHighRange = 1.0f;
+
+
 	// Use this for initialization
 	void Start () {
 		staticVars.count = 0;
@@ -17,6 +25,8 @@ public class AddToScore : MonoBehaviour {
 	
     void OnTriggerEnter()
     {
+        float vol = volHighRange;
+        StarSource.PlayOneShot(StarPop, vol);
         starcollect.Play();
         staticVars.count = staticVars.count + 1;
         SetCountText();

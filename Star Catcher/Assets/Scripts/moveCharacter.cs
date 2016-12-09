@@ -6,6 +6,10 @@ public class moveCharacter : MonoBehaviour {
 
     //This is the character controller component
     public CharacterController myCC;
+    public AudioSource PlayerSound;
+    public AudioClip Landing;
+    public float volLowRange = .5f;
+    public float volHighRange = 1.0f;
     //Temp var of datatype vector3 to move the character
     private Vector3 tempPos;
 
@@ -82,6 +86,8 @@ public class moveCharacter : MonoBehaviour {
         //Waiting for input and comparing jumpcount
         if (Input.GetKeyDown(KeyCode.Space) && jumpCount < jumpCountMax-1)
         {
+
+            
             //float vol = Random.Range(volLowRange, volHighRange);
             //source.PlayOneShot(jumpSound, vol);
 

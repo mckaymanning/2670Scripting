@@ -8,11 +8,12 @@ public class StarCollect : MonoBehaviour
     //public Text scoreText;
     //public int score;
 
+
     void OnTriggerEnter()
     {
         Destroy(thisStar);
-        
     }
+
 
 
     //public void AddScore(int newScoreValue)
