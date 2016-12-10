@@ -6,7 +6,8 @@ public class PlayerAnimation : MonoBehaviour {
 
     public Animator myAnimator;
     int jumpHash = Animator.StringToHash("Jump");
-    int groundHash = Animator.StringToHash("Grounded");
+    //int groundHash = Animator.StringToHash("Grounded");
+    int landingHash = Animator.StringToHash("Landing");
     //private object myBody;
 
 
@@ -17,8 +18,31 @@ public class PlayerAnimation : MonoBehaviour {
         
 	}
 	
+
+    void HandleLayers()
+    {
+        if (moveCharacter.myCC.isGrounded)
+        {
+            myAnimator.SetLayerWeight(1, 0);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                myAnimator.SetLayerWeight(1, 1);
+            }
+        }
+        else
+        {
+            myAnimator.SetLayerWeight(1, 1);
+
+        }
+    }
+
 	// Update is called once per frame
 	void Update () {
+
+        HandleLayers();
+
+        if (moveCharacter.myCC.velocity.y < 0)
+            myAnimator.SetBool(landingHash, true);
 
         if (Input.GetKeyDown(KeyCode.Space) && moveCharacter.jumpCount < moveCharacter.jumpCountMax - 1)
         {
@@ -27,7 +51,11 @@ public class PlayerAnimation : MonoBehaviour {
         }
 
         if (moveCharacter.myCC.isGrounded)
-            myAnimator.SetTrigger(groundHash);
+            myAnimator.ResetTrigger(jumpHash);
+            myAnimator.SetBool(landingHash, false);
+
+        //if (moveCharacter.myCC.isGrounded)
+        //    myAnimator.SetTrigger(groundHash);
 
             //myAnimator.SetFloat("vSpeed", GetComponentInParent<CharacterController>().velocity.y);
 
