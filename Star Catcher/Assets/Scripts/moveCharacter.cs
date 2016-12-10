@@ -130,6 +130,7 @@ public class moveCharacter : MonoBehaviour {
 
         //Test if character controller is grounded
         if (myCC.isGrounded)
+            
         {
             
             //Reset the jumpcount if grounded

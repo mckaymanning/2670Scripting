@@ -271,6 +271,11 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 38.6
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013009584968, guid: 1bc7cc7822e72a24fb133b17f695f7af,
+        type: 2}
+      propertyPath: ArtCC
+      value: 
+      objectReference: {fileID: 1964538513}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1bc7cc7822e72a24fb133b17f695f7af, type: 2}
   m_IsPrefabParent: 0
@@ -4686,6 +4691,11 @@ MeshFilter:
 --- !u!1 &1964538509 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000010685282242, guid: 1bc7cc7822e72a24fb133b17f695f7af,
+    type: 2}
+  m_PrefabInternal: {fileID: 173480175}
+--- !u!143 &1964538513 stripped
+CharacterController:
+  m_PrefabParentObject: {fileID: 143000012976585862, guid: 1bc7cc7822e72a24fb133b17f695f7af,
     type: 2}
   m_PrefabInternal: {fileID: 173480175}
 --- !u!4 &1964538517 stripped

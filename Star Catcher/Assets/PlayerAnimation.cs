@@ -5,6 +5,7 @@ public class PlayerAnimation : MonoBehaviour {
 
 
     public Animator myAnimator;
+
     int jumpHash = Animator.StringToHash("Jump");
     //int groundHash = Animator.StringToHash("Grounded");
     int landingHash = Animator.StringToHash("Landing");
@@ -29,18 +30,19 @@ public class PlayerAnimation : MonoBehaviour {
         HandleLayers();
 
         if (moveCharacter.myCC.velocity.y < 0)
+            
             myAnimator.SetBool(landingHash, true);
          
 
-        if (Input.GetKeyDown(KeyCode.Space) && moveCharacter.jumpCount < moveCharacter.jumpCountMax - 1)
+        if (Input.GetKeyDown(KeyCode.Space) && moveCharacter.jumpCount < moveCharacter.jumpCountMax - 1 && moveCharacter.myCC.velocity.y > 0)
         {
-
+            myAnimator.ResetTrigger(jumpHash);
             myAnimator.SetTrigger(jumpHash);
  
         }
 
         if (moveCharacter.myCC.isGrounded)
-            myAnimator.ResetTrigger(jumpHash);
+            
             myAnimator.SetBool(landingHash, false);
 
         //if (moveCharacter.myCC.isGrounded)
