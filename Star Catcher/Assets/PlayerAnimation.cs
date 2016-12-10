@@ -19,35 +19,24 @@ public class PlayerAnimation : MonoBehaviour {
 	}
 	
 
-    void HandleLayers()
-    {
-        if (moveCharacter.myCC.isGrounded)
-        {
-            myAnimator.SetLayerWeight(1, 0);
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                myAnimator.SetLayerWeight(1, 1);
-            }
-        }
-        else
-        {
-            myAnimator.SetLayerWeight(1, 1);
-
-        }
-    }
+    
 
 	// Update is called once per frame
 	void Update () {
+
+        print(moveCharacter.myCC.velocity.y);
 
         HandleLayers();
 
         if (moveCharacter.myCC.velocity.y < 0)
             myAnimator.SetBool(landingHash, true);
+         
 
         if (Input.GetKeyDown(KeyCode.Space) && moveCharacter.jumpCount < moveCharacter.jumpCountMax - 1)
         {
 
             myAnimator.SetTrigger(jumpHash);
+ 
         }
 
         if (moveCharacter.myCC.isGrounded)
@@ -77,5 +66,22 @@ public class PlayerAnimation : MonoBehaviour {
         //if (Input.GetKeyUp(KeyCode.LeftArrow))
             //myAnimator.SetBool("isRunning", false);
 
+    }
+
+    private void HandleLayers()
+    {
+        if (moveCharacter.myCC.isGrounded)
+        {
+            myAnimator.SetLayerWeight(1, 0);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                myAnimator.SetLayerWeight(1, 1);
+            }
+        }
+        else
+        {
+            myAnimator.SetLayerWeight(0, 1);
+
+        }
     }
 }

@@ -11,7 +11,7 @@ public class moveCharacter : MonoBehaviour {
     public float volLowRange = .5f;
     public float volHighRange = 1.0f;
     //Temp var of datatype vector3 to move the character
-    private Vector3 tempPos;
+    public static Vector3 tempPos;
 
     //Speed of the temp var in x
     public float speed = 1;
@@ -73,7 +73,8 @@ public class moveCharacter : MonoBehaviour {
     
 
     void Update ()
-    { 
+    {
+        
         //if (Input.GetKeyDown(KeyCode.RightArrow))
         
         //  myAnimator.SetBool("IsRunning", true);
@@ -130,6 +131,7 @@ public class moveCharacter : MonoBehaviour {
         //Test if character controller is grounded
         if (myCC.isGrounded)
         {
+            
             //Reset the jumpcount if grounded
             jumpCount = 0;
 
