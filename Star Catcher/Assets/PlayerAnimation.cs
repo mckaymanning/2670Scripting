@@ -25,8 +25,7 @@ public class PlayerAnimation : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        print(moveCharacter.myCC.velocity.y);
-
+      
         HandleLayers();
 
         if (moveCharacter.myCC.velocity.y < 0)
@@ -34,7 +33,7 @@ public class PlayerAnimation : MonoBehaviour {
             myAnimator.SetBool(landingHash, true);
          
 
-        if (Input.GetKeyDown(KeyCode.Space) && moveCharacter.jumpCount < moveCharacter.jumpCountMax - 1 && moveCharacter.myCC.velocity.y > 0)
+        if (Input.GetKeyDown(KeyCode.Space) )
         {
             myAnimator.ResetTrigger(jumpHash);
             myAnimator.SetTrigger(jumpHash);
@@ -42,7 +41,7 @@ public class PlayerAnimation : MonoBehaviour {
         }
 
         if (moveCharacter.myCC.isGrounded)
-            
+            //myAnimator.ResetTrigger(jumpHash);
             myAnimator.SetBool(landingHash, false);
 
         //if (moveCharacter.myCC.isGrounded)
