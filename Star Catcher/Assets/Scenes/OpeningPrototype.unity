@@ -1436,6 +1436,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6c7385185085d54b9b5db79dfb3c862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MenuSounds: {fileID: 0}
+  ButtonClick: {fileID: 0}
+  volLowRange: 0.5
+  volHighRange: 1
 --- !u!4 &386049062
 Transform:
   m_ObjectHideFlags: 0
@@ -1606,6 +1610,10 @@ Prefab:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: a4b4fff02399d0e4281ed9aa2dc25489, type: 3}
+    - target: {fileID: 1000011151174250, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
   m_IsPrefabParent: 0

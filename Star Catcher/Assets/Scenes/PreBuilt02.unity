@@ -71,7 +71,7 @@ LightmapSettings:
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
-  m_LightingDataAsset: {fileID: 112000001, guid: 762ba764065e76e48998830f7b44e6c6,
+  m_LightingDataAsset: {fileID: 112000020, guid: 3a1258587ed8d664caf972086d120ac4,
     type: 2}
   m_RuntimeCPUUsage: 25
 --- !u!196 &4
@@ -2261,6 +2261,11 @@ Prefab:
     - target: {fileID: 1000012952350076, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012023097880, guid: 6b15e7c7029a4476fac1a1927401ba53,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b15e7c7029a4476fac1a1927401ba53, type: 2}

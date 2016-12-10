@@ -210,6 +210,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1000012673254916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000010400947900}
+  m_Layer: 0
+  m_Name: WolfFleePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 484878306007051821, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1000012907644880
 GameObject:
   m_ObjectHideFlags: 1
@@ -395,6 +410,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000011647826354}
   m_RootOrder: 4
+--- !u!4 &4000010400947900
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012673254916}
+  m_LocalRotation: {x: -0.043619405, y: 0, z: 0, w: 0.9990483}
+  m_LocalPosition: {x: -35, y: -3, z: 12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: -5, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000012591621454}
+  m_RootOrder: 9
 --- !u!4 &4000010440453154
 Transform:
   m_ObjectHideFlags: 1
@@ -579,9 +607,10 @@ Transform:
   - {fileID: 4000010637826804}
   - {fileID: 4000011852940730}
   - {fileID: 4000011647826354}
+  - {fileID: 4000010400947900}
   - {fileID: 4000013900169180}
-  - {fileID: 4000014095839252}
   - {fileID: 4000011128744236}
+  - {fileID: 4000014095839252}
   - {fileID: 4000013011822954}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -597,7 +626,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012591621454}
-  m_RootOrder: 12
+  m_RootOrder: 13
 --- !u!4 &4000013265949212
 Transform:
   m_ObjectHideFlags: 1
@@ -649,7 +678,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: -5, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012591621454}
-  m_RootOrder: 9
+  m_RootOrder: 10
 --- !u!4 &4000013994603906
 Transform:
   m_ObjectHideFlags: 1
@@ -675,7 +704,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000012591621454}
-  m_RootOrder: 10
+  m_RootOrder: 12
 --- !u!4 &4000014225307764
 Transform:
   m_ObjectHideFlags: 1
@@ -1289,7 +1318,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012952350076}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c9408b8c06d5f94482e00013bab0a64, type: 3}
   m_Name: 
@@ -1565,7 +1594,7 @@ ParticleSystem:
       maxColor: {r: 0.9137255, g: 0.92156863, b: 1, a: 0.74509805}
       minMaxState: 0
     startSize:
-      scalar: 0.8
+      scalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1581,7 +1610,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: 0.375
+          value: 0.3
           inSlope: 0
           outSlope: 0
           tangentMode: 0
