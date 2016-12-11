@@ -11,7 +11,7 @@ public class MenuScript : MonoBehaviour {
 
     public void Loadgame()
     { 
-    SceneManager.LoadScene(Random.Range(3, 7));
+    SceneManager.LoadScene(Random.Range(3, 8));
     }
 
 

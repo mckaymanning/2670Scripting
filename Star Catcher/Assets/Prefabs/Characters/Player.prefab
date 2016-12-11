@@ -238,7 +238,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.5, y: 2.27, z: 1.5}
+  m_Size: {x: 2.5, y: 2.27, z: 2}
   m_Center: {x: 0, y: 0.26, z: 0}
 --- !u!82 &82000010612961724
 AudioSource:
@@ -549,7 +549,7 @@ ParticleSystem:
   moveWithTransform: 0
   autoRandomSeed: 1
   scalingMode: 1
-  randomSeed: 1216289025
+  randomSeed: 1232185950
   InitialModule:
     serializedVersion: 2
     enabled: 1

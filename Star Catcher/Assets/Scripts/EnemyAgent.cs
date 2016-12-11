@@ -18,6 +18,7 @@ public class EnemyAgent : MonoBehaviour
 
     void Start()
     {
+        
         myTarget = player;
         //Chase();
     }
