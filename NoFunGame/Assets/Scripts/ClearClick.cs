@@ -10,13 +10,15 @@ public class ClearClick : MonoBehaviour {
         cube = gameObject;
     }
 
-    void OnMouseDown()
+    public virtual void OnMouseDown()
     {
         cube.GetComponent<Renderer>().enabled = false;
     }
 
-    void OnMouseUp()
+    public virtual void OnMouseUp()
     {
         cube.GetComponent<Renderer>().enabled = true;
     }
+
+
 }

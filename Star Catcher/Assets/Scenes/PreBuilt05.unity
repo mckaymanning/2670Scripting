@@ -1827,7 +1827,6 @@ GameObject:
   - 223: {fileID: 494714814}
   - 114: {fileID: 494714813}
   - 114: {fileID: 494714812}
-  - 111: {fileID: 494714811}
   m_Layer: 5
   m_Name: LevelCanvas
   m_TagString: Untagged
@@ -1856,22 +1855,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!111 &494714811
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 111000013533309846, guid: 9109aeda9b1d46c4285297d5f0d506bf,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 494714809}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: ef0c97c56ffe65c479f99ac8d44c726b, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: ef0c97c56ffe65c479f99ac8d44c726b, type: 2}
-  m_WrapMode: 2
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &494714812
 MonoBehaviour:
   m_ObjectHideFlags: 0
