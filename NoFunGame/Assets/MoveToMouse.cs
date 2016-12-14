@@ -1,14 +1,34 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using System;
 public class MoveToMouse : MonoBehaviour {
 
+
+    
     NavMeshAgent myAgent;
+    public bool empowered;
 
     void Start()
     {
         myAgent = GetComponent<NavMeshAgent>();
+        PlayerPowerUp.SendThisBool = SendThisBooHandler;
     }
+
+    private void SendThisBooHandler(bool obj)
+    {
+        empowered = obj;
+    }
+
+    void SpeedBoost()
+    {
+        if (empowered == true)
+            GetComponent<NavMeshAgent>().speed = 20;
+        else
+        {
+            GetComponent<NavMeshAgent>().speed = 10;
+        }
+    }
+
 
     void Update()
     {
