@@ -18,13 +18,13 @@ public class targetClick : MonoBehaviour {
     {
         Sphere.GetComponent<Renderer>().enabled = false;
         StartCoroutine("ResetTarget");
-        Score++;
-        print("Score: " + Score);
+
+        print("Pop");
     }
 
     IEnumerator ResetTarget()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(20);
         Sphere.GetComponent<Renderer>().enabled = true;
     }
 }

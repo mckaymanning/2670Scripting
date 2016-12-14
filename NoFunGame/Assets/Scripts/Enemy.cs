@@ -19,6 +19,11 @@ public class Enemy : MonoBehaviour {
         KeepDistance();
 	}
 
+    void OnMouseDown()
+    {
+        print("Ouch! You got me!");
+    }
+
     public virtual void Watching()
     {
         gameObject.transform.LookAt(myTarget.transform.position);

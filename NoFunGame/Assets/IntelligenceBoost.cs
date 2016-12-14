@@ -11,7 +11,7 @@ public class IntelligenceBoost : MonoBehaviour, ILootable, IUnavailable {
     {
         PowerUp();
         NotNow();
-        PowerUpDuration();
+        StartCoroutine ("PowerUpDuration");
     }
     public void PowerUp()
     {

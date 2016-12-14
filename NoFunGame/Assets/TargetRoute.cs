@@ -18,7 +18,6 @@ public class TargetRoute : MonoBehaviour
         // between points (ie, the agent doesn't slow down as it
         // approaches a destination point).
         agent.autoBraking = false;
-
         GotoNextPoint();
     }
 
@@ -38,14 +37,17 @@ public class TargetRoute : MonoBehaviour
     }
 
 
-
-
    void Update()
     {
-        // Choose the next destination point when the agent gets
-        // close to the current one.
         if (agent.remainingDistance < 0.5f)
             GotoNextPoint();
+
+        // Choose the next destination point when the agent gets
+        // close to the current one.
+
     }
+
+
+
 }
 

@@ -5,14 +5,13 @@ public class SexinessBoost : MonoBehaviour, ILootable, IUnavailable
 {
 
     private bool Sexy;
-    private float TempIntel;
     private bool PoweredUp;
 
     void OnTriggerEnter()
     {
         PowerUp();
         NotNow();
-        PowerUpDuration();
+        StartCoroutine("PowerUpDuration");
     }
     public void PowerUp()
     {

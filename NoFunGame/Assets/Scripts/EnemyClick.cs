@@ -16,7 +16,7 @@ public class EnemyClick : ClearClick
 
     IEnumerator RebootEnemy()
     {
-        yield return new WaitForSeconds (5);
+        yield return new WaitForSeconds (10);
         GetComponent<NavMeshAgent>().enabled = true;
     }
 }
