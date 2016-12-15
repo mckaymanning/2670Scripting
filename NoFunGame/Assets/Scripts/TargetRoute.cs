@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+//This script sets different point on the navmesh that the navmeshagent will move towards.
 public class TargetRoute : MonoBehaviour
 {
 
@@ -36,7 +36,8 @@ public class TargetRoute : MonoBehaviour
         destPoint = (destPoint + 1) % points.Length;
     }
 
-
+   //On December 14, 2016 Anthony Romrell declared in class, in front of multiple witnesses "OKAY FINE! I will allow you to use two different
+   //instances of Update in your projects." This (for the lack of any better solution) is my second use of update outside of the MoveToMouse script.
    void Update()
     {
         if (agent.remainingDistance < 0.5f)
