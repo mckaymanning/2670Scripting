@@ -3,8 +3,8 @@ using System.Collections;
 //IntelligenceBoost inherits Monobehavior but must interface with the requirements of ILootable and IUnavailable
 public class IntelligenceBoost : MonoBehaviour, ILootable, IUnavailable {
 
-    private float Intelligence = 5;
-    private float TempIntel;
+    public static float Intelligence = 5;
+    public float TempIntel;
     private bool PoweredUp;
     //When the trigger is entered by player PowerUp, NotNow and PowerUpDuration are initiated.
     void OnTriggerEnter()
